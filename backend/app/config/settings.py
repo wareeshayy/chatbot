@@ -32,8 +32,8 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 15
     refresh_token_expire_days: int = 7
 
-    # LLM provider: gemini (dev), openai, azure (production)
-    llm_provider: Literal["gemini", "openai", "azure"] = "gemini"
+    # LLM provider: gemini (dev), openai, azure (production), openrouter
+    llm_provider: Literal["gemini", "openai", "azure", "openrouter"] = "gemini"
     gemini_api_key: str = ""
     gemini_model: str = "gemini-2.0-flash"
     gemini_embedding_model: str = "models/text-embedding-004"
@@ -41,6 +41,10 @@ class Settings(BaseSettings):
     openai_api_key: str = ""
     openai_model: str = "gpt-4o-mini"
     embedding_model: str = "text-embedding-3-small"
+
+    # OpenRouter
+    openrouter_api_key: str = ""
+    openrouter_model: str = "openai/gpt-4o"
 
     # Azure OpenAI (production)
     azure_openai_endpoint: str = ""

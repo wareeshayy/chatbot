@@ -73,7 +73,14 @@ class RAGService:
         context = self._format_context(citations)
         answer = generate_answer(context, history_text, query)
 
-        model = settings.gemini_model if settings.gemini_api_key else "retrieval-only"
+        if settings.llm_provider == "openrouter" and settings.openrouter_api_key:
+            model = settings.openrouter_model
+        elif settings.llm_provider == "openai" and settings.openai_api_key:
+            model = settings.openai_model
+        elif settings.llm_provider == "azure" and settings.azure_openai_api_key:
+            model = settings.azure_openai_deployment
+        else:
+            model = settings.gemini_model if settings.gemini_api_key else "retrieval-only"
         latency_ms = int((time.perf_counter() - start) * 1000)
 
         return RAGResult(

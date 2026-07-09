@@ -31,6 +31,8 @@ INSTRUCTIONS FOR ANSWERING:
         return _generate_gemini(prompt)
     if settings.llm_provider == "openai" and settings.openai_api_key:
         return _generate_openai(prompt)
+    if settings.llm_provider == "openrouter" and settings.openrouter_api_key:
+        return _generate_openrouter(prompt)
     # Fallback: return context-based summary without LLM
     return _fallback_answer(system_context, user_query)
 
@@ -70,3 +72,23 @@ def _fallback_answer(context: str, query: str) -> str:
         "Based on the IJAIKE knowledge base (retrieval-only mode — add GEMINI_API_KEY for full AI answers):\n\n"
         + context[:3000]
     )
+
+
+def _generate_openrouter(prompt: str) -> str:
+    from openai import OpenAI
+
+    client = OpenAI(
+        api_key=settings.openrouter_api_key,
+        base_url="https://openrouter.ai/api/v1",
+    )
+    response = client.chat.completions.create(
+        model=settings.openrouter_model or "openai/gpt-4o",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.2,
+        max_tokens=1000,
+        extra_headers={
+            "HTTP-Referer": "http://localhost:3000",
+            "X-Title": "IJAIKE Chatbot",
+        },
+    )
+    return response.choices[0].message.content.strip()

@@ -45,8 +45,17 @@ def create_app() -> FastAPI:
     @app.exception_handler(AppException)
     async def app_exception_handler(request: Request, exc: AppException) -> JSONResponse:
         request_id = request.headers.get("X-Request-ID", "-")
+        origin = request.headers.get("origin")
+        headers = {}
+        if origin:
+            headers["Access-Control-Allow-Origin"] = origin
+            headers["Access-Control-Allow-Credentials"] = "true"
+            headers["Access-Control-Allow-Methods"] = "*"
+            headers["Access-Control-Allow-Headers"] = "*"
+
         return JSONResponse(
             status_code=exc.status_code,
+            headers=headers,
             content={
                 "detail": exc.message,
                 "code": exc.code,
@@ -68,8 +77,17 @@ def create_app() -> FastAPI:
             code = "QUOTA_EXCEEDED"
             status_code = 429
 
+        origin = request.headers.get("origin")
+        headers = {}
+        if origin:
+            headers["Access-Control-Allow-Origin"] = origin
+            headers["Access-Control-Allow-Credentials"] = "true"
+            headers["Access-Control-Allow-Methods"] = "*"
+            headers["Access-Control-Allow-Headers"] = "*"
+
         return JSONResponse(
             status_code=status_code,
+            headers=headers,
             content={
                 "detail": message,
                 "code": code,
