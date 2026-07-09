@@ -23,7 +23,7 @@ interface AttachedFile {
 }
 
 
-function getDocUrl(title: string): string | null {
+function getDocUrl(title: string): string {
   const t = title.toLowerCase();
   if (t.includes("requirement")) return "https://ijaike.org/submission-requirements/";
   if (t.includes("procedure")) return "https://ijaike.org/submission-procedure/";

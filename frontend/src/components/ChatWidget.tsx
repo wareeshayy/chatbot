@@ -14,7 +14,7 @@ interface AttachedFile {
 }
 
 
-function getDocUrl(title: string): string | null {
+function getDocUrl(title: string): string {
   const t = title.toLowerCase();
   if (t.includes("requirement")) return "https://ijaike.org/submission-requirements/";
   if (t.includes("procedure")) return "https://ijaike.org/submission-procedure/";
@@ -63,6 +63,13 @@ export function ChatWidget() {
   const [sending, setSending] = useState(false);
   const [thinkingStatus, setThinkingStatus] = useState("Analyzing query & retrieving context...");
   const [error, setError] = useState<string | null>(null);
+  const [copiedId, setCopiedId] = useState<string | null>(null);
+
+  const handleCopy = (id: string, text: string) => {
+    navigator.clipboard.writeText(text);
+    setCopiedId(id);
+    setTimeout(() => setCopiedId(null), 2000);
+  };
 
   // Suggested questions from API
   const [suggested, setSuggested] = useState<{ id: string; question: string }[]>([]);
@@ -387,7 +394,7 @@ export function ChatWidget() {
                           </div>
                         ) : (
                           <div className="space-y-2">
-                            <div className="rounded-2xl px-3.5 py-2.5 text-xs leading-relaxed bg-white border border-slate-200 text-slate-880 shadow-sm font-sans">
+                            <div className="rounded-2xl px-3.5 py-2.5 text-xs leading-relaxed bg-white border border-slate-200 text-slate-880 shadow-sm font-sans relative group">
                               <ReactMarkdown
                                 remarkPlugins={[remarkGfm]}
                                 components={{
@@ -421,6 +428,24 @@ export function ChatWidget() {
                               >
                                 {m.content}
                               </ReactMarkdown>
+
+                              {/* Copy button */}
+                              <button
+                                type="button"
+                                onClick={() => handleCopy(m.id, m.content)}
+                                className="absolute top-2 right-2 p-1.5 rounded-lg border border-slate-100 bg-white hover:bg-slate-50 text-slate-400 hover:text-slate-600 shadow-sm transition opacity-0 group-hover:opacity-100"
+                                title="Copy reply"
+                              >
+                                {copiedId === m.id ? (
+                                  <svg className="h-3.5 w-3.5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                  </svg>
+                                ) : (
+                                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                                  </svg>
+                                )}
+                              </button>
                             </div>
 
                             {/* Reference Links inside Widget */}
