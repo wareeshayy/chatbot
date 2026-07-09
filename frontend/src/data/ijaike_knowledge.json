@@ -1,0 +1,874 @@
+{
+  "source": "IJAIKE - International Journal of Artificial Intelligence & Knowledge Engineering",
+  "website": "https://ijaike.org",
+  "pages": [
+    {
+      "page_title": "Submission Requirements",
+      "url": "https://ijaike.org/submission-requirements/",
+      "intro": "Thank you for considering the International Journal of Artificial Intelligence & Knowledge Engineering (AIKE Journal) for your manuscript. To ensure a smooth and timely review, please prepare and submit your work according to the following guidelines.",
+      "sections": [
+        {
+          "section_number": "1",
+          "section_title": "Manuscript Preparation",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Authors must ensure that their manuscripts are original, unpublished, and not under consideration elsewhere. Submissions should be written in clear, concise English and formatted as described in the following section 2 below. All figures, tables, and references must be properly cited and integrated into the text."
+            },
+            {
+              "type": "paragraph",
+              "text": "The contents of the submitted article must be within the scope of the JAIKE journal and be of sufficient quality. If not, the article will not be reviewed. Please read the journal's Aims and Scope to see if your article is appropriate and suitable for the Journal."
+            },
+            {
+              "type": "paragraph",
+              "text": "We welcome the following submission types in AI and knowledge engineering:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Original Research Articles",
+                "Review Papers",
+                "Case Studies & Applications",
+                "Short Communications"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Special topics for our inaugural issues include:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Agentic AI",
+                "Generative AI",
+                "AI for Healthcare",
+                "AI for Enterprise Automation",
+                "Explainability in AI & Safety",
+                "Knowledge Graphs",
+                "Semantic Web",
+                "Software Security and Vulnerability Management",
+                "AI for Wireless Communication and Networking",
+                "AI for Education",
+                "AI-driven Concurrent Engineering",
+                "AI-driven Robotics and Automation",
+                "AI for Bioinformatics in Healthcare"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Submissions may incorporate material previously published in conference proceedings, provided that:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Additional Content: The manuscript contains significant, unpublished extensions—new experiments, proofs, results, analyses, or expanded discussion—that go beyond the conference version.",
+                "Distinct Presentation: The journal submission is sufficiently different to avoid copyright infringement.",
+                "Citation of Original: Authors cite and credit the prior conference paper in the reference list."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "This journal format offers the opportunity to present a more complete, polished version of your work."
+            }
+          ]
+        },
+        {
+          "section_number": "2",
+          "section_title": "Required Documentation",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "To ensure a smooth and timely review, please prepare and submit your work according to the guidelines below. Papers submitted in other formats (e.g., a camera-ready or conference style) will be rejected without review. Manuscripts should be submitted in Microsoft Word (.doc or .docx) format. PDF submissions will not be accepted. The file should include the title, abstract, keywords, main text, references, and author information."
+            },
+            {
+              "type": "subsection",
+              "title": "Formatting Requirements",
+              "items": [
+                "Typeface: 12-pt Times New Roman (or equivalent), double-spaced",
+                "Margins: 1\" (2.5 cm) on all sides",
+                "Page numbering: Bottom-center"
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Author Information",
+              "text": "Each submission must include the full names, affiliations, and email addresses of all contributing authors. The corresponding author should be identified and will serve as the primary contact throughout the review process."
+            },
+            {
+              "type": "subsection",
+              "title": "Abstract & Keywords",
+              "items": [
+                "Abstract: 250–350 words summarizing objectives, methods, key results, and conclusions",
+                "Keywords: 7–9 terms reflecting your paper's core themes"
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "Main Manuscript Structure",
+              "text": "List clearly—using bullets or numbering—the hypotheses or research questions your study addresses. This helps editors and reviewers assess novelty and contribution.",
+              "additional": "Organize your text under these recommended headings:",
+              "items": [
+                "Introduction",
+                "Related Work",
+                "Methodology",
+                "Results",
+                "Discussion",
+                "Conclusion"
+              ],
+              "note": "Use numbered subsections to enhance readability."
+            },
+            {
+              "type": "subsection",
+              "title": "Figures & Tables",
+              "items": [
+                "Resolution: ≥ 300 dpi for images",
+                "Placement: Embed near first citation",
+                "Numbering & Captions: Sequential (e.g., Figure 1, Table 2) with descriptive legends"
+              ]
+            },
+            {
+              "type": "subsection",
+              "title": "References Style",
+              "text": "IEEE or APA—apply consistently"
+            }
+          ]
+        },
+        {
+          "section_number": "3",
+          "section_title": "Ethical Compliance",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Authors are expected to adhere to ethical standards in research and publishing. Any conflicts of interest, funding sources, or ethical approvals (where applicable) must be disclosed in the manuscript."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Policy Violation: Breach of this policy leads to immediate rejection and a six-month ban on further submissions to AIKE Journal.",
+                "Permissions: Secure and cite permissions for any reused material (figures, tables, text).",
+                "Conflict of Interest: Disclose any financial or non-financial relationships affecting the work."
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "4",
+          "section_title": "Plagiarism Policy",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "All submissions are screened for plagiarism. Manuscripts with significant overlap with previously published work will be rejected. Authors are encouraged to use plagiarism detection tools before submission."
+            }
+          ]
+        },
+        {
+          "section_number": "5",
+          "section_title": "Timeframe for Resubmission",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Authors are encouraged to resubmit within 6 months of the original decision. Delayed resubmissions may require justification or may be declined if the topic is no longer aligned with the journal's current focus."
+            }
+          ]
+        },
+        {
+          "section_number": "6",
+          "section_title": "Submission Process",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Manuscripts should be submitted online at: https://mc04.manuscriptcentral.com/jaike"
+            },
+            {
+              "type": "paragraph",
+              "text": "Please include \"IJAIKE Submission\" in the subject line."
+            }
+          ]
+        },
+        {
+          "section_number": "7",
+          "section_title": "Review and Decision",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "All manuscripts undergo a double-blind peer review process. Authors will be notified of the editorial decision within 4–6 weeks. Revisions, if requested, should be submitted within the specified timeframe."
+            }
+          ]
+        },
+        {
+          "section_number": "8",
+          "section_title": "Copyright and Licensing",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Upon acceptance, authors will be required to sign a copyright transfer agreement. IJAIKE publishes under an open-access model, allowing free access to published content while retaining author rights."
+            }
+          ]
+        },
+        {
+          "section_number": "9",
+          "section_title": "Open Access & Copyright",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                "License: CC BY 4.0—free, perpetual reuse with attribution",
+                "Copyright: Authors retain copyright and grant AIKE Journal first publication rights"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "We look forward to your submission and to advancing AI and knowledge-engineering research together."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_title": "Submission Procedure",
+      "url": "https://ijaike.org/submission-procedure/",
+      "intro": "JAIKE Journal has deployed the Clarivate ScholarOne Manuscript Central system for managing manuscript submissions, setting up the editorial workflow, and tracking our editorial tasks. Please submit your original manuscript in Microsoft Word format (.doc or .docx) for possible publication via an ONLINE Submission Link.. If you have not used the Manuscript Central site before, or don't have a Log In ID, you may be asked to create an account.",
+      "sections": [
+        {
+          "section_number": "1",
+          "section_title": "Initial Submission",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Authors should submit their manuscripts using the following ONLINE Submission Link: https://mc04.manuscriptcentral.com/jaike with the subject line: \"IJAIKE Submission – [Paper Title].\" Submissions must follow the IJAIKE Manuscript Submission Requirements."
+            },
+            {
+              "type": "paragraph",
+              "text": "You will be asked for the basic information about the paper (title, authors, contact information, abstract, Paper Type, etc.). You may be asked to confirm several declarations about your understanding of the submission requirements. The last item in the form may contain 3 survey questions. Replying to these questions is a mandatory part of the submission procedure, and your submission cannot be processed without these answers. The online form also explains how to upload your manuscript in a preferred Word format to the Manuscript Central Submission Management System. There is no charge to submit an initial manuscript, but there will be a publication fee, commonly referred to as Article Publication Charges (APC), once the paper is accepted for publication."
+            }
+          ]
+        },
+        {
+          "section_number": "2",
+          "section_title": "Acknowledgment of Receipt",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Upon receiving the manuscript, the editorial office will send an acknowledgment email within 3-7 business days. If you do not receive confirmation, please follow up to ensure successful delivery."
+            }
+          ]
+        },
+        {
+          "section_number": "3",
+          "section_title": "Preliminary Review",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The editorial team will conduct an initial screening to assess the manuscript's relevance, originality, and adherence to submission requirements. Manuscripts that do not meet basic requirements may be returned for revision before peer review."
+            }
+          ]
+        },
+        {
+          "section_number": "4",
+          "section_title": "Peer Review Process",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Eligible manuscripts undergo a double-blind peer review by at least two independent reviewers. The process typically takes 4–8 weeks. Reviewers evaluate the manuscript based on scientific merit, clarity, methodology, long-term reference value, content quality, and contribution to the advancement in the field of AI and Knowledge Engineering."
+            }
+          ]
+        },
+        {
+          "section_number": "5",
+          "section_title": "Editorial Decision",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Based on reviewer feedback, the editorial board will make one of the following decisions:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Accept",
+                "Minor Revision",
+                "Major Revision",
+                "Reject"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Authors will be notified via email, along with reviewer comments and revision instructions if applicable."
+            }
+          ]
+        },
+        {
+          "section_number": "6",
+          "section_title": "Revision and Resubmission",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "If revisions are requested, authors must submit the revised manuscript within the specified timeframe, along with a detailed response to reviewers' comments. Delayed resubmissions may be treated as new submissions."
+            }
+          ]
+        },
+        {
+          "section_number": "7",
+          "section_title": "Final Acceptance and Publication",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Once accepted, the manuscript will undergo final formatting and proofreading. Authors will receive a galley proof for approval before publication. The article will then be published online under IJAIKE's open-access model."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_title": "Reviewer Anonymity Policy",
+      "url": "https://ijaike.org/reviewer-anonymity-policy/",
+      "intro": "IJAIKE adheres to a strict double-blind peer review process. Both authors' and reviewers' identities are concealed throughout the review cycle to ensure impartiality and objectivity.",
+      "sections": [
+        {
+          "section_number": "1",
+          "section_title": "Double-Blind Review Commitment",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "IJAIKE adheres to a strict double-blind peer review process. Both authors' and reviewers' identities are concealed throughout the review cycle to ensure impartiality and objectivity. Journal of AI and Knowledge Engineering is governed by a set of strict Editorial Policies outlined at this link https://eaapublishing.org/journals/index.php/jaike/policies"
+            }
+          ]
+        },
+        {
+          "section_number": "2",
+          "section_title": "Reviewer Confidentiality",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Reviewers are expected to maintain complete confidentiality regarding the manuscripts they evaluate. They must not disclose, discuss, or use any part of the manuscript content for personal or professional purposes."
+            }
+          ]
+        },
+        {
+          "section_number": "3",
+          "section_title": "Anonymity of Reviewer Reports",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "All reviewer comments and recommendations are shared with authors in an anonymized form. Reviewers should avoid including any identifying information in their reports that could compromise their anonymity. Any concerns regarding potential breaches of anonymity are taken seriously and addressed promptly."
+            }
+          ]
+        },
+        {
+          "section_number": "4",
+          "section_title": "Editorial Oversight and Ethical Stewardship",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The IJAIKE editorial board ensures that the double-blind process is upheld at every stage. An important role of the Managing Editors and Editor-in-Chief is to support the extensive efforts of journal editors and the often-unsung volunteer work undertaken by peer reviewers in maintaining the integrity of the scholarly record. It is a tribute to scholarly practice that the system functions effectively and that issues are comparatively rare."
+            }
+          ]
+        },
+        {
+          "section_number": "5",
+          "section_title": "Institutional Responsibility",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Both the journal's management authority and the publisher play a vital role in supporting, investing in, and nurturing the peer review process. This includes safeguarding the anonymity and confidentiality of all communications and ensuring that the highest ethical standards are consistently followed."
+            }
+          ]
+        },
+        {
+          "section_number": "6",
+          "section_title": "Ethical Conduct",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Reviewers must declare any conflicts of interest and recuse themselves from reviewing manuscripts where impartiality may be compromised. IJAIKE expects all reviewers to provide fair, constructive, and timely feedback in accordance with best practices in scholarly publishing."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_title": "Special Issue Process",
+      "url": "https://ijaike.org/special-issue-process/",
+      "intro": "Researchers interested in organizing a special issue should submit a formal proposal to the editorial board at editor-in-chief@ijaike.org.",
+      "sections": [
+        {
+          "section_number": "1",
+          "section_title": "Proposal Submission",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Researchers interested in organizing a special issue should submit a formal proposal to the editorial board at editor-in-chief@ijaike.org. The proposal must include:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Proposed title and theme",
+                "Guest editor(s) with affiliations and contact details",
+                "Rationale and relevance to IJAIKE's scope",
+                "Tentative timeline",
+                "Target audience and potential contributors"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2",
+          "section_title": "Proposal Evaluation",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The editorial board will review the proposal based on thematic relevance, research needs, novelty, and the qualifications of the guest editor(s). Feedback or revision requests may be provided before final approval."
+            }
+          ]
+        },
+        {
+          "section_number": "3",
+          "section_title": "Call for Papers (CFP)",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Once approved, the guest editor(s) will collaborate with the IJAIKE team to draft and disseminate a Call for Papers. The CFP will be published on the IJAIKE website and promoted through academic networks and social media."
+            }
+          ]
+        },
+        {
+          "section_number": "4",
+          "section_title": "Manuscript Submission and Review",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "All papers submitted to a special issue must follow IJAIKE's submission requirements and be submitted via the standard online Manuscript Submission Weblink. Authors must indicate the title of the special issue on the submission form to ensure proper routing. These submissions will be assigned to the designated Guest Editors, who will manage the double-blind peer review process in coordination with the IJAIKE editorial board."
+            }
+          ]
+        },
+        {
+          "section_number": "5",
+          "section_title": "Editorial Oversight",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The IJAIKE editorial board retains final authority over all editorial decisions. Guest editors are expected to uphold the journal's ethical standards and ensure timely communication with authors and reviewers."
+            }
+          ]
+        },
+        {
+          "section_number": "6",
+          "section_title": "Finalization and Production",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Once the majority of papers designated for the special issue are accepted, the Guest Editors will prepare an Editorial and organize the accepted papers into a structured Table of Contents. The special issue will then proceed to production and be published as soon as the content is finalized and ready."
+            }
+          ]
+        },
+        {
+          "section_number": "7",
+          "section_title": "Publication and Indexing",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The completed special issue will be published under IJAIKE's open-access model and featured prominently on the journal's homepage. All articles will be indexed and made freely accessible to the global research community."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_title": "Journal Article Types and Style Guide",
+      "source": "Uploaded Document - Journal of Artificial Intelligence and Knowledge Engineering",
+      "note": "Human Brain follows a single-blind peer-review policy; author information cannot be identified by reviewers. The first page of the main manuscripts must be labelled 'Title Page'.",
+      "sections": [
+        {
+          "section_title": "Article Types",
+          "content": [
+            {
+              "type": "article_type",
+              "name": "Original Research Articles",
+              "word_limit": ">4000; no upper limit",
+              "abstract_word_limit": "<400",
+              "display_items": "5-8",
+              "references": "No limit"
+            },
+            {
+              "type": "article_type",
+              "name": "Review Articles",
+              "word_limit": ">4000; no upper limit",
+              "abstract_word_limit": "<400",
+              "display_items": "No limit",
+              "references": "No limit"
+            },
+            {
+              "type": "article_type",
+              "name": "Brief Reports/Short Communications",
+              "word_limit": "<2500",
+              "abstract_word_limit": "<200",
+              "references": "<30",
+              "display_items": "<4"
+            },
+            {
+              "type": "article_type",
+              "name": "Letters to the editor",
+              "word_limit": "<1500",
+              "abstract": "None",
+              "references": "<10",
+              "display_items": "<2"
+            },
+            {
+              "type": "article_type",
+              "name": "Clinical Pathology Case Discussions",
+              "word_limit": "<2500",
+              "note": "Should the word count exceed this, please state this in the cover letter upon submission.",
+              "abstract_word_limit": "<200",
+              "references": "<15",
+              "display_items": "<5"
+            },
+            {
+              "type": "article_type",
+              "name": "Methods",
+              "word_limit": "<3000",
+              "note": "Should the word count exceed this, please state this in the cover letter upon submission.",
+              "abstract_word_limit": "<250",
+              "references": "<40",
+              "display_items": "<5"
+            },
+            {
+              "type": "article_type",
+              "name": "Research Platforms and Database",
+              "word_limit": ">4000; no upper limit",
+              "abstract_word_limit": "<400",
+              "display_items": "No limit",
+              "references": "No limit"
+            },
+            {
+              "type": "article_type",
+              "name": "Research Protocols",
+              "title_note": "Non-declarative title that includes the words 'research protocol.'",
+              "word_limit": ">4000; no upper limit",
+              "abstract_word_limit": "<400",
+              "display_items": "No limit",
+              "references": "No limit"
+            },
+            {
+              "type": "article_type",
+              "name": "Editorial Highlights",
+              "word_limit": "<1200",
+              "references": "<12",
+              "display_items": "<1"
+            },
+            {
+              "type": "article_type",
+              "name": "Prospective",
+              "word_limit": "<1500",
+              "note": "Should the word count exceed this, please state this in the cover letter upon submission.",
+              "abstract": "None",
+              "references": "<10",
+              "display_items": "<2"
+            }
+          ]
+        },
+        {
+          "section_title": "Style Details/Formatting",
+          "content": [
+            {
+              "type": "list",
+              "items": [
+                "Font: 12-point, Times New Roman",
+                "Line spacing: Double-spaced throughout",
+                "Margins: Normal (2.5 cm)",
+                "Page size: A4 (21 × 29.7 cm)",
+                "Heading style: First level: 16-point, bold; Second level: 14-point, bold; Third level: 12-point, bold",
+                "Use the automatic page numbering function to number the pages.",
+                "Abbreviations should be defined in the text at the first use.",
+                "The Title Page and Main Body text (see below) should be included in a single Word document (Docx)."
+              ]
+            }
+          ]
+        },
+        {
+          "section_title": "Title Page",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The first page of the main manuscripts must be labelled 'Title Page'."
+            },
+            {
+              "type": "paragraph",
+              "text": "The Title Page must include the full article title, a short running title, and all authors' names, affiliations, and email addresses."
+            },
+            {
+              "type": "paragraph",
+              "text": "The corresponding author must be indicated, and a full mailing address provided."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Full title: <100 characters, including spaces",
+                "Short running title: <40 characters, including spaces",
+                "No abbreviations"
+              ]
+            }
+          ]
+        },
+        {
+          "section_title": "Main Body",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The main body text of Original Articles and Brief Reports should contain an Abstract, Keywords, Introduction, Methods, Results, Discussion, Conclusion, Acknowledgements, Conflict of Interest Disclosures, Funding, and References."
+            },
+            {
+              "type": "paragraph",
+              "text": "The main body text of Reviews should contain an Abstract, Keywords, text (beginning with Introduction and ending with Conclusion), Acknowledgements, Conflict of Interest Disclosures, Funding, and References."
+            },
+            {
+              "type": "paragraph",
+              "text": "The main body text of Clinical Pathology Case Discussions should contain an Abstract, Keywords, Introduction, Clinical Summary or Case Presentation (with subsections if necessary), Pathological Findings (with subsections if necessary), Genetic Findings (if necessary), Discussion, Acknowledgements, Conflict of Interest Disclosures, Funding, and References."
+            },
+            {
+              "type": "subsection",
+              "title": "Abstract",
+              "text": "The abstract should consist of one structural paragraph (preferably: Aim, Background, Result and Conclusion) of 400 words for Original Articles and Reviews and less than 200 words for Brief Reports and Clinical Pathology Case Discussions."
+            },
+            {
+              "type": "subsection",
+              "title": "Keywords",
+              "text": "3-8"
+            },
+            {
+              "type": "subsection",
+              "title": "List of Abbreviations",
+              "text": "Any abbreviations should be defined in the text at first use, and a list of abbreviations should be provided after the Title Page. Authors must check their keywords with MeSH (Medical Subject Headings)."
+            },
+            {
+              "type": "subsection",
+              "title": "Conflict of Interest Disclosures",
+              "text": "All authors' financial and personal relationships with other people or organizations that could be perceived as a possible conflict of interest must be stated."
+            }
+          ]
+        },
+        {
+          "section_title": "Display Items – Figures and Tables",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Figures and Tables must be cited in consecutive order in the text, e.g., (Fig. 1A–D), (Table 1), (Supplementary Fig. 1A-B)."
+            },
+            {
+              "type": "paragraph",
+              "text": "Tables should be submitted as separate files and be in a plain format. They should be numbered consecutively and include a definitive title at the top. Table footnotes may be used to define abbreviations, symbols, or other terminology within the table."
+            },
+            {
+              "type": "paragraph",
+              "text": "Figures (including graphs and plots) must be submitted as separate files in TIFF or JPEG format. The position of figures in the text should be indicated. Captions for figures should be listed in the manuscript after the References. Figures shall be sharp and of high contrast, with a resolution of 300 dpi for colour and halftone (grey-shaded) artwork or 600 dpi for black and white line drawings. Figures should be prepared to fit into a single column (90 mm width) or two columns (185 mm)."
+            }
+          ]
+        },
+        {
+          "section_title": "Ethical Considerations",
+          "content": [
+            {
+              "type": "subsection",
+              "title": "Experimental Studies of Human Subjects",
+              "text": "The Methods section of the main body text must contain a statement verifying that the protocol for the study received prior approval from the appropriate institutional review board and that informed consent was obtained from each subject."
+            },
+            {
+              "type": "subsection",
+              "title": "Animal Experiments",
+              "text": "The Methods section of the main body text must contain a statement verifying that the protocol for the study received approval from the institutional animal care and use committee."
+            },
+            {
+              "type": "paragraph",
+              "text": "The study contains intervention so it must have a registration code date of registration and URL. Registration ID, date of registration, study start date, URL of record regarding ethical issues must be mentioned before conflict of interest."
+            }
+          ]
+        },
+        {
+          "section_title": "Letters",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Letters should consist of one of the following: 1) Commentary on a previous article published in Human Brain. The letter should closely focus on the content of the article being discussed. 2) Commentary on an issue affecting brain research or human brain bank research."
+            }
+          ]
+        },
+        {
+          "section_title": "References and Citations",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "The list of References should include only works cited in the text. Papers presented at meetings but not yet published or accepted for publication and other unpublished data may be included in the References (e.g., 'In press'). References and citations should typically follow the Vancouver Referencing style."
+            },
+            {
+              "type": "paragraph",
+              "text": "The Vancouver style uses the citation-sequence system, meaning that references at the end of your paper are numbered in the order in which the corresponding citations appear in your text. In-text citations consist of consecutive numbers formatted in superscript and placed after the period in brackets."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_title": "Article Processing Charges (APC)",
+      "url": "https://ijaike.org/article-processing-charges-apc/",
+      "intro": "The International Journal of Artificial Intelligence & Knowledge Engineering (IJAIKE) is a peer-reviewed, open-access scientific journal dedicated to advancing global research in artificial intelligence and knowledge engineering. To ensure high-quality publishing and global accessibility without cost barriers for readers, IJAIKE applies a flexible, size-based Article Processing Charge (APC) for accepted manuscripts.",
+      "sections": [
+        {
+          "section_title": "Why an APC?",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "As an open-access journal, IJAIKE does not charge subscription fees. Instead, the APC covers the validation, enrichment, production, and preservation of your work, including:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Submission and double-blind peer review management",
+                "Editorial development, ethical validation, and plagiarism screening",
+                "Copyediting, typesetting, data normalization, and formatting",
+                "DOI registration, abstracting, and indexing",
+                "Legal deposit and long-term digital archiving",
+                "Platform maintenance and open-access dissemination",
+                "Curation and display of article-level metrics for reach and impact analysis"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "The APC ensures every published article is rigorously reviewed, professionally presented, and permanently accessible—without paywalls—for the global research community."
+            }
+          ]
+        },
+        {
+          "section_title": "APC Calculation Structure",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Unlike fixed-fee journals, JAIKE uses a flexible APC model that reflects the actual size and complexity of each accepted manuscript:"
+            },
+            {
+              "type": "formula",
+              "text": "APC = (Number of formatted text pages) × Rate per text page + (Number of figures and tables) × Illustration rate"
+            },
+            {
+              "type": "paragraph",
+              "text": "For APC calculation purposes, each illustration or table submitted along with the manuscript is counted as a page. For consistency across various submissions, each part of a multi-part Table or Figure is also counted as a single page."
+            },
+            {
+              "type": "paragraph",
+              "text": "This fee is calculated only after the manuscript is accepted and the final revised version is submitted in compliance with the Author Submission Guidelines."
+            },
+            {
+              "type": "paragraph",
+              "text": "There are no fees for initial submission or peer review. APC applies only at the final publication stage."
+            },
+            {
+              "type": "paragraph",
+              "text": "Each year, we set the text and illustration rates at the start of the year to partially offset the JAIKE Journal's management and publication expenses. For the first four inaugural issues, the article processing charge for both text and illustration pages is a flat $99 per page. Color images and figures are billed at twice the black-and-white rate."
+            }
+          ]
+        },
+        {
+          "section_title": "Editorial Stewardship & Publishing Values",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "As part of our editorial responsibility, IJAIKE invests APC revenue back into:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Supporting editorial offices and boards",
+                "Enhancing peer review technologies and recognition systems",
+                "Funding global registration and standard-setting organizations",
+                "Sustaining digital infrastructures that ensure the long-term preservation and free public access to all published articles"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Our mission is to uphold the scholarly record and empower future innovation by making research freely available and permanently citable."
+            },
+            {
+              "type": "subsection",
+              "title": "Reviewer Recognition",
+              "text": "IJAIKE gratefully acknowledges the critical role of peer reviewers, whose time and insights are offered voluntarily as part of professional service and scholarly engagement. Although reviewers are not financially compensated, APC funds support the infrastructure required to manage, recognize, and reward high-quality peer review."
+            },
+            {
+              "type": "paragraph",
+              "text": "In some cases—such as accelerated publication options—where additional editorial or review support is required, a higher APC may apply. Authors will be notified in advance."
+            }
+          ]
+        },
+        {
+          "section_title": "Waivers & Discounts",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "To promote equity in research publishing, IJAIKE offers partial APC waivers to:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Authors from low-income or lower-middle-income economies (as defined by the World Bank)",
+                "Early-career researchers or students lacking institutional support",
+                "Authors of manuscripts deemed to have exceptional potential impact"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Requests should be submitted at the time of manuscript submission via Editor-in-Chief@ijaike.com, with an explanation of eligibility."
+            }
+          ]
+        },
+        {
+          "section_title": "Invoicing & Payment",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Upon final manuscript acceptance, an official invoice will be issued based on the APC calculation. Accepted payment methods include:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Credit/debit card",
+                "Bank transfer",
+                "PayPal (upon request)"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "All fees must be settled before publication scheduling."
+            }
+          ]
+        },
+        {
+          "section_title": "Refund Policy",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Since the APC supports services rendered during peer review and production, IJAIKE does not issue refunds once the payment has been processed and the publication workflow is underway."
+            }
+          ]
+        },
+        {
+          "section_title": "Limited-Time 50% APC Discount for IJAIKE Journal Submissions",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "As part of our commitment to advancing global AI scholarship, the International Journal of Artificial Intelligence and Knowledge Engineering (IJAIKE) is pleased to offer a 50% discount on Article Processing Charges (APC) for all papers submitted by December 30, 2025."
+            },
+            {
+              "type": "subsection",
+              "title": "How to Apply",
+              "steps": [
+                "Prepare your manuscript according to the IJAIKE author guidelines.",
+                "Submit your paper via our online portal by December 30, 2025.",
+                "Enjoy the automatic APC reduction upon acceptance."
+              ]
+            },
+            {
+              "type": "deadline",
+              "text": "Deadline: December 30, 2025"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

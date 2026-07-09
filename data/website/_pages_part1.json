@@ -1,0 +1,420 @@
+[
+  {
+    "page_title": "Home",
+    "url": "https://ijaike.org/",
+    "sections": [
+      {
+        "section_title": "Hero",
+        "content": "JAIKE—Publishing Tomorrow's Intelligence Today. JAIKE is a peer-reviewed, open-access journal dedicated to publishing advanced research in artificial intelligence, knowledge engineering, and IoT. We connect global researchers and innovators shaping the future of smart technologies and cognitive systems."
+      },
+      {
+        "section_title": "About Us",
+        "content": "The Journal of Artificial Intelligence and Knowledge Engineering (JAIKE) is a peer-reviewed, open-access international journal dedicated to advancing research in AI, Knowledge Engineering, and IoT. Published quarterly by the Association for the Advancement of Knowledge Solutions (AAKS) in collaboration with the EurAsia Academic Publishing Group, JAIKE serves as a global platform for sharing cutting-edge research, applied innovations, and interdisciplinary advancements. All submissions undergo a rigorous double-blind peer-review process. With support from academic institutions in India and the USA, and technical sponsorships underway with organizations like EurAI, JAIKE fosters collaboration between researchers, engineers, and industry leaders shaping the future of intelligent systems."
+      },
+      {
+        "section_title": "Journal of Artificial Intelligence and Knowledge Engineering (JAIKE)",
+        "content": "JAIKE, published by the Knowledge Solutions Society, serves as a leading international forum bridging the gap between Artificial Intelligence (AI) and Knowledge Engineering (KE). Our mission is to advance cutting-edge theories, technologies, and applications, driving innovations in knowledge mining, acquisition, learning, discovery, reasoning, processing, and optimization. Established in 2024, JAIKE is an open-access scientific journal published in collaboration with the Association for the Advancement of Knowledge Solutions (AAKS) and the EurAsia Academic Publishing Group (EAPG). We adhere to a rigorous double-blind peer-review process and publish high-quality research quarterly, ensuring the timely dissemination of emerging AI and KE advancements, book reviews, and industry-driven application papers."
+      },
+      {
+        "section_title": "Commitment to Excellence",
+        "content": "JAIKE is backed by leading academic and industry experts, including technical cosponsors from St. Joseph's Institute of Technology (India) and the Board of Directors of Knowledge Solutions (KSol, USA). We are also actively pursuing technical sponsorships with prestigious organizations, such as the European Association for Artificial Intelligence (EurAI)."
+      },
+      {
+        "section_title": "A Premier Platform for AI & Knowledge Engineering",
+        "content": "JAIKE provides a global forum for researchers, engineers, policymakers, and business leaders to share groundbreaking research and practical applications in AI, KE, and Internet of Things (IoT) technologies. This archival, peer-reviewed quarterly journal delivers: State-of-the-art research on AI and Knowledge Engineering; Book reviews of fundamental techniques and emerging trends; Applied research relevant to industrial innovation and smart product development."
+      },
+      {
+        "section_title": "What Sets JAIKE Apart",
+        "content": "At the Journal of Artificial Intelligence and Knowledge Engineering (JAIKE), we are committed to advancing scholarly excellence and global knowledge-sharing in the fields of AI, Knowledge Engineering, and IoT.",
+        "items": [
+          "Peer-Reviewed Excellence",
+          "Global Reach, Open Access",
+          "Focused on Emerging Technologies",
+          "Academic & Industry Backing",
+          "Quarterly Publishing Cadence"
+        ]
+      },
+      {
+        "section_title": "FAQ - Frequently Asked Questions",
+        "faqs": [
+          {
+            "question": "What topics does JAIKE cover?",
+            "answer": "IJAIKE publishes research in Artificial Intelligence (AI), Knowledge Engineering (KE), the Internet of Things (IoT), and cognitive technologies—including knowledge mining, acquisition, discovery, reasoning, and smart systems development."
+          },
+          {
+            "question": "Is the journal peer-reviewed?",
+            "answer": "Yes. All submissions undergo a double-blind peer-review process to ensure the highest standards of academic quality, originality, and integrity."
+          },
+          {
+            "question": "How often is JAIKE published?",
+            "answer": "IJAIKE is a quarterly publication, releasing four issues per year featuring research articles, review papers, and application-based studies."
+          },
+          {
+            "question": "Is there a publication fee?",
+            "answer": "Yes. As an open-access journal, IJAIKE may charge an Article Processing Fee (APC) to support editorial, hosting, and indexing services. Exact fees and waiver options are detailed on the 'For Authors' page."
+          },
+          {
+            "question": "How can I submit my manuscript?",
+            "answer": "Authors can submit manuscripts directly through the 'Submit Your Manuscript' section on the IJAIKE website. All guidelines regarding formatting, references, and ethical standards are available under the 'For Authors' tab."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page_title": "About JAIKE",
+    "url": "https://ijaike.org/about-jaike/",
+    "sections": [
+      {
+        "section_title": "Journal of AI and Knowledge Engineering (JAIKE)",
+        "content": "The Journal of AI and Knowledge Engineering (JAIKE) is a prestigious international publication, issued by the Association for the Advancement of Knowledge Solutions (AAKS) in collaboration with the EurAsia Academic Publishing Group (EAPG)—a highly reputed global publisher dedicated to bridging the gap between academia and industry. Through this platform, JAIKE facilitates the dissemination of pioneering research in Artificial Intelligence (AI) and Knowledge Engineering (KE). As an open-access journal, JAIKE ensures unrestricted and unlimited online access for authors and their affiliated institutions, fostering greater visibility and engagement within the research community. We invite scholars and professionals to explore our Call for Papers (CFP) for special issues and other upcoming initiatives available on our website. The journal will be indexed at Google Scholar, Web of Science, Scopus, the Directory of Open Access Journals (DOAJ), and many other Specialized academic databases."
+      },
+      {
+        "section_title": "Scope and Contributions",
+        "content": "JAIKE serves as a leading international forum for computer engineering researchers and industry professionals, providing a space to share groundbreaking findings and innovative applications across various domains, including:",
+        "items": [
+          "Cognitive processes in knowledge mining",
+          "AI-driven knowledge discovery and acquisition",
+          "Knowledge processing and distribution",
+          "Applications in IoT and smart product development"
+        ],
+        "additional": "As a quarterly peer-reviewed archival journal, JAIKE publishes cutting-edge research on emerging topics in KE and AI, along with insightful book reviews and application-oriented papers of relevance to both researchers and industry experts."
+      }
+    ]
+  },
+  {
+    "page_title": "Journal Focus",
+    "url": "https://ijaike.org/journal-focus/",
+    "sections": [
+      {
+        "section_title": "Journal Focus: Journal of Artificial Intelligence and Knowledge Engineering (JAIKE)",
+        "content": "The Journal of Artificial Intelligence and Knowledge Engineering (JAIKE) is a leading international publication dedicated to advancing research in Artificial Intelligence (AI) and Knowledge Engineering (KE). It focuses on key areas such as knowledge mining and discovery, knowledge acquisition, knowledge intelligence, knowledge-based engineering (KBE), knowledge-based systems (KBS), knowledge management (KM), smart processes, products, artifacts, the Internet of Things (IoT), and knowledge-driven automation (KDA). Additionally, JAIKE explores the theoretical foundations, architectures, and knowledge infrastructure that support the evolution of AI-driven IoT and Internet technologies."
+      },
+      {
+        "section_title": "Scope and Contributions",
+        "content": "As a multi-disciplinary, fully refereed international journal, JAIKE publishes high-quality contributions, including:",
+        "items": [
+          "Theoretical and experiential papers that advance AI and KE methodologies",
+          "Research notes and case studies highlighting novel applications in AI and IoT",
+          "Critical review papers discussing the state-of-the-art in lifecycle-oriented, knowledge-based product development and emerging technologies"
+        ]
+      },
+      {
+        "section_title": "Publication Process and Timelines",
+        "content": "To ensure thematic coherence, accepted papers are strategically grouped so that each issue focuses on a select number of key research areas. In addition to publishing archival research, JAIKE upholds a rigorous peer-review process, with authors receiving timely feedback on submissions within a target turnaround time of 3-6 months. Through scholarly discourse and industry collaboration, JAIKE continues to serve as a vital platform for advancing innovations in AI and Knowledge Engineering."
+      }
+    ]
+  },
+  {
+    "page_title": "Journal Scope",
+    "url": "https://ijaike.org/journal-scope/",
+    "sections": [
+      {
+        "section_title": "Journal Scope: Journal of Artificial Intelligence and Knowledge Engineering (JAIKE)",
+        "content": "The Journal of Artificial Intelligence and Knowledge Engineering (JAIKE) is a premier international platform for pioneering research in Artificial Intelligence (AI) and Knowledge Engineering (KE). Its scope encompasses a broad range of interdisciplinary topics, including knowledge mining and discovery, knowledge acquisition, knowledge intelligence, knowledge-based engineering (KBE), knowledge-based systems (KBS), knowledge management (KM), smart processes/products/artifacts, the Internet of Things (IoT), and knowledge-driven automation (KDA). JAIKE also explores the theoretical foundations, architectures, and enabling IoT and Internet technologies that shape the future of intelligent systems."
+      },
+      {
+        "section_title": "Key Research Areas - Artificial Intelligence Category",
+        "subsections": [
+          {
+            "name": "Graph-based Machine Learning (ML) & Deep Learning",
+            "items": [
+              "Applications of graph neural networks in complex knowledge representation",
+              "Scalable deep learning architectures for large-scale structured data",
+              "Enhancing explainability in graph-based AI models for decision-making",
+              "AI-powered fraud detection, social network analysis, and biomedical research"
+            ]
+          },
+          {
+            "name": "Natural Language Processing (NLP)",
+            "items": [
+              "Advancements in Large Language Models (LLMs) for AI-driven applications",
+              "NLP-powered conversational AI for human-computer interaction",
+              "AI-driven text processing for automated translation and sentiment analysis",
+              "Addressing bias, fairness, and ethics in language models"
+            ]
+          },
+          {
+            "name": "Edge Computing & Edge AI",
+            "items": [
+              "AI acceleration for real-time decision-making in edge environments",
+              "Privacy-preserving AI through federated learning at the edge",
+              "Optimizing AI deployments for resource-constrained devices",
+              "Applications of Edge AI in IoT, smart cities, and autonomous systems"
+            ]
+          },
+          {
+            "name": "Generative AI",
+            "items": [
+              "Innovations in foundation models and generative architectures",
+              "Applications of AI-generated media in art, music, and content creation",
+              "Ethical challenges surrounding synthetic data and misinformation",
+              "Multimodal AI integrating vision, speech, and structured data"
+            ]
+          },
+          {
+            "name": "AI Agents & Agentic AI",
+            "items": [
+              "Autonomous AI agents for self-learning and adaptive behaviors",
+              "Scalable frameworks for multi-agent collaboration and coordination",
+              "AI-driven optimization for intelligent automation and task execution",
+              "Human-AI interaction challenges in agentic AI development"
+            ]
+          },
+          {
+            "name": "AI Automation & Robotics",
+            "items": [
+              "AI-driven automation for industrial robotics and smart manufacturing",
+              "AI-powered human-robot collaboration for efficiency and safety",
+              "Adaptive reinforcement learning for autonomous robotic control",
+              "AI-enhanced robotic perception for complex environments"
+            ]
+          },
+          {
+            "name": "AI Solutions and AI Solution Architecture",
+            "items": [
+              "Comparative analysis of AI frameworks for scalable deployment",
+              "AI-driven cloud architectures for optimizing enterprise applications",
+              "Standardization of AI solution best practices for different industries",
+              "Addressing performance, security, and interoperability challenges in AI solutions",
+              "AI-enhanced predictive analytics and business intelligence applications"
+            ]
+          },
+          {
+            "name": "AI for Design Automation and Systems Engineering",
+            "items": [
+              "AI-assisted simulation and modeling for engineering applications",
+              "AI-driven optimization in hardware and software development",
+              "AI-enhanced validation and testing methodologies for complex systems",
+              "Predictive maintenance and fault detection using AI-driven analytics"
+            ]
+          },
+          {
+            "name": "AI for Product Management",
+            "items": [
+              "AI-powered market research and consumer behavior analysis",
+              "AI-driven recommendation engines for product personalization",
+              "AI-enhanced supply chain and logistics management strategies",
+              "AI for product lifecycle management and sustainability"
+            ]
+          },
+          {
+            "name": "AI-driven Product Design & Development",
+            "items": [
+              "AI-assisted UX and human-centered design innovations",
+              "Generative AI-driven product prototyping and materials discovery",
+              "AI-enhanced testing frameworks for product validation",
+              "AI-powered automation in manufacturing and design processes"
+            ]
+          },
+          {
+            "name": "AI Applications in Healthcare, Finance, and Industry",
+            "items": [
+              "AI-driven predictive diagnostics and personalized healthcare solutions",
+              "AI-powered fraud detection and risk mitigation in financial sectors",
+              "AI-enabled process optimization in supply chain and industrial automation",
+              "AI for regulatory compliance and governance in critical industries"
+            ]
+          },
+          {
+            "name": "AI for Drug Discovery & Bioinformatics",
+            "items": [
+              "AI-driven molecular analysis and drug candidate selection",
+              "AI-powered genomic data processing for precision medicine",
+              "AI-enhanced biomedical image analysis for disease identification",
+              "Computational biology applications leveraging AI-driven insights"
+            ]
+          },
+          {
+            "name": "Ethical, Explainable AI, & Responsible AI",
+            "items": [
+              "AI fairness, bias mitigation, and ethical considerations in automation",
+              "Transparency and explainability in AI-driven decision-making models",
+              "Societal impacts and AI accountability in governance and policy",
+              "Best practices for responsible AI adoption in industry and research"
+            ]
+          }
+        ]
+      },
+      {
+        "section_title": "Key Research Areas - Knowledge Engineering Category",
+        "subsections": [
+          {
+            "name": "Knowledge Mining and Discovery (KMD)",
+            "items": [
+              "AI-driven approaches for automated knowledge discovery from structured and unstructured data",
+              "Graph-based knowledge extraction and reasoning for complex systems",
+              "Deep learning techniques for knowledge mining and anomaly detection",
+              "Knowledge fusion from heterogeneous data sources for enhanced decision-making"
+            ]
+          },
+          {
+            "name": "Knowledge Acquisition (KA)",
+            "items": [
+              "Automated techniques for extracting knowledge from large-scale datasets",
+              "Human-in-the-loop methods for enhancing AI-based knowledge acquisition",
+              "Ontology learning and semantic knowledge representation frameworks",
+              "Transfer learning and domain adaptation for knowledge acquisition"
+            ]
+          },
+          {
+            "name": "Knowledge Intelligence (KI)",
+            "items": [
+              "AI-enhanced decision-support systems based on knowledge intelligence",
+              "Cognitive computing for real-time knowledge processing and adaptation",
+              "Explainable AI for knowledge-driven reasoning and problem-solving",
+              "Machine learning for predictive knowledge modeling in dynamic environments"
+            ]
+          },
+          {
+            "name": "Knowledge-Based Engineering (KBE)",
+            "items": [
+              "AI-driven optimization of engineering design and automation",
+              "Knowledge-based expert systems for industrial and manufacturing processes",
+              "Computational intelligence applications in engineering problem-solving",
+              "Knowledge-driven simulation models for complex systems engineering"
+            ]
+          },
+          {
+            "name": "Knowledge-Based Systems (KBS)",
+            "items": [
+              "Architecture and development of intelligent expert systems",
+              "Rule-based reasoning techniques for KBS applications",
+              "Hybrid AI approaches integrating symbolic and statistical reasoning",
+              "Applications of KBS in healthcare, finance, and cybersecurity"
+            ]
+          },
+          {
+            "name": "Knowledge Management (KM)",
+            "items": [
+              "AI-powered knowledge management systems for enterprises",
+              "Best practices in managing organizational knowledge and AI-assisted workflows",
+              "Intelligent retrieval systems for large-scale knowledge repositories",
+              "Knowledge-sharing strategies for fostering collaboration and innovation"
+            ]
+          },
+          {
+            "name": "Knowledge-Driven Automation (KDA)",
+            "items": [
+              "AI-driven automation of repetitive knowledge-intensive tasks",
+              "Self-learning systems for adaptive automation in enterprise solutions",
+              "Knowledge-based robotic automation for industry and service domains",
+              "AI-driven workflow orchestration using structured knowledge models"
+            ]
+          },
+          {
+            "name": "Knowledge Architecture & IoT Platforms",
+            "items": [
+              "Semantic web and linked data technologies for knowledge architecture",
+              "AI-powered IoT platforms for real-time data integration and decision-making",
+              "Standardization of IoT knowledge models for smart applications",
+              "Security and privacy considerations in knowledge-driven IoT platforms"
+            ]
+          },
+          {
+            "name": "Smart Products / Smart Processes",
+            "items": [
+              "AI-powered product intelligence for predictive maintenance and fault detection",
+              "Smart process automation using machine learning and expert systems",
+              "Knowledge-based recommendation engines for personalized smart solutions",
+              "AI-driven enhancements in connected smart ecosystems"
+            ]
+          },
+          {
+            "name": "Internet of Things (IoT)",
+            "items": [
+              "Edge AI and distributed intelligence for IoT-driven knowledge processing",
+              "AI-enhanced cybersecurity frameworks for IoT networks",
+              "Knowledge engineering approaches for IoT-enabled automation",
+              "AI-driven predictive analytics for IoT applications in healthcare, industry, and logistics"
+            ]
+          }
+        ]
+      },
+      {
+        "section_title": "Publication Process and Submission Guidelines",
+        "content": "JAIKE invites original research papers and application-based studies related to AI, KBE, KBS, KM, KDA, and IoT. Accepted papers are strategically grouped to ensure thematic coherence, with each journal issue focusing on select topic areas. The journal maintains a rigorous peer-review process, ensuring high academic standards and timely decision notifications within a target turnaround time of 3-6 months. By fostering thought leadership and groundbreaking discoveries, JAIKE serves as a vital forum for advancing innovation in Artificial Intelligence and Knowledge Engineering.",
+        "links": {
+          "submission_requirements": "https://ijaike.org/submission-requirements/",
+          "submission_procedure": "https://ijaike.org/submission-procedure/"
+        }
+      }
+    ]
+  },
+  {
+    "page_title": "What is Knowledge Engineering (KE)",
+    "url": "https://ijaike.org/what-is-knowledge-engineering-ke/",
+    "sections": [
+      {
+        "section_title": "What is Knowledge Engineering (KE)",
+        "content": "Knowledge engineering is a crucial field within artificial intelligence (AI), focused on emulating the reasoning and decision-making processes of human experts in specialized domains. By establishing structured rules and logical frameworks, KE enables AI systems to analyze, interpret, and reach conclusions much like a human expert would.",
+        "core_concepts": [
+          {
+            "name": "Knowledge-Based Systems (KBS)",
+            "description": "Computer programs that use structured knowledge and inference mechanisms to tackle complex problems. These systems explicitly represent knowledge and apply reasoning methods to derive new insights."
+          },
+          {
+            "name": "Expert Systems",
+            "description": "AI-driven systems designed to replicate the decision-making ability of specialists, using if–then rule-based reasoning rather than conventional procedural programming."
+          },
+          {
+            "name": "Knowledge Engineering vs. Knowledge Management",
+            "description": "While knowledge management focuses on organizing and directing knowledge processes, knowledge engineering develops the methods and structures necessary to implement those processes effectively."
+          }
+        ]
+      },
+      {
+        "section_title": "Industry Applications & Significance",
+        "content": "With knowledge increasingly recognized as a critical asset for organizations, KE plays a pivotal role in industries such as healthcare, finance, manufacturing, and cybersecurity. Companies rely on KE-driven systems to automate decision-making, optimize business processes, and enhance strategic insights.",
+        "methodology": "CommonKADS is one of the most widely adopted structured methodologies for knowledge analysis and system development. Validated through extensive industry research, CommonKADS has become a de facto standard in Europe, the US, and Japan, helping organizations formalize and optimize AI-driven knowledge engineering strategies.",
+        "additional": "As technology advances, our smart products—ranging from wireless devices and mobile phones to computers and TVs—are becoming increasingly intelligent while simultaneously shrinking in size. This transformation is largely driven by the growing integration of artificial intelligence (AI) and knowledge engineering (KE), which enable the development of sophisticated features, logic, and adaptive behaviors. Across computer science research communities, ongoing debates continue to emphasize the critical role AI and KE play in shaping a more intelligent, efficient, and competitive business landscape. In recent years, traditional product development methodologies have evolved significantly, incorporating AI-driven and generative knowledge-based techniques to streamline processes, resolve inefficiencies, and boost productivity. These cutting-edge approaches have opened doors to a wide range of applications—not only in the well-established domain of New Product Development (NPD), but also across emerging fields such as education, urban planning, manufacturing, governance, and healthcare. Today, leading organizations in the U.S. and across the globe are harnessing AI and knowledge engineering tools, techniques, and process frameworks to gain strategic advantages. By adopting these innovations, businesses are enhancing their collaborative development efforts, strengthening global competitiveness, and positioning themselves as leaders in an era defined by intelligent systems and data-driven decision-making."
+      },
+      {
+        "section_title": "The Future of Knowledge Engineering",
+        "content": "As AI technologies advance, knowledge engineering is evolving from an art and craft into a refined scientific discipline. Its role in intelligent automation, expert systems, and cognitive AI continues to expand, redefining how businesses and society leverage AI for efficient decision-making and strategic innovation."
+      }
+    ]
+  },
+  {
+    "page_title": "Journal Readership",
+    "url": "https://ijaike.org/journal-readership/",
+    "content": "JAIKE serves as a dynamic platform for academicians, scientists, industry leaders, and innovators to exchange groundbreaking research and explore its practical applications in business economics. By fostering knowledge-sharing and collaboration, the journal enables professionals to gain competitive advantages in the development of smart products and intelligent processes across diverse industries.",
+    "target_readership": [
+      "Academics & Researchers – Advancing theoretical and applied AI-driven research.",
+      "Scientists & Innovators – Exploring novel discoveries and emerging technologies.",
+      "Practitioners & Industry Leaders – Driving real-world implementation of AI solutions.",
+      "Managers & Decision Makers – Applying data-driven insights for strategic growth.",
+      "Policy Makers (Government & Private Sectors) – Shaping ethical and sustainable AI practices.",
+      "Technology Developers & Engineers – Building next-generation smart systems and IoT solutions.",
+      "Knowledge Workers & Analysts – Enhancing business intelligence for AI-powered operations."
+    ],
+    "closing": "By uniting a diverse community of experts, JAIKE empowers organizations and individuals to harness the full potential of AI, fostering innovation that transforms industries and economies."
+  },
+  {
+    "page_title": "Subscription Information",
+    "url": "https://ijaike.org/subscription-information/",
+    "sections": [
+      {
+        "section_title": "Overview",
+        "content": "At JAIKE, we are committed to full open access (Diamond Service), ensuring that published works reach a wide audience without barriers. Open Access (OA) is fundamental to advancing knowledge, making high-quality research readily available to the academic community and beyond."
+      },
+      {
+        "section_title": "Primary Market: OA Authors",
+        "content": "Authors of OA papers enjoy unrestricted, unlimited online access to their publications. They can freely download, print, or share their work across various platforms, including LinkedIn and ResearchGate, without restrictions. If authors prefer physical copies, they can print them using their personal devices or request professionally bound editions."
+      },
+      {
+        "section_title": "Secondary Market: Library & Institutional Subscribers",
+        "content": "For libraries and non-OA institutions, subscription fees apply only to printed editions of the fully bound journal. These fees help offset the costs of organizing, paginating, printing, and mailing quarterly journal issues while ensuring continued access to high-quality academic content."
+      },
+      {
+        "section_title": "Society & Affiliate Member Access (Individual Subscribers)",
+        "content": "Individuals subscribing as society or affiliate members gain access to full-text articles through:",
+        "items": [
+          "Secure website login using a personal username and password.",
+          "Exclusive membership benefits, ensuring direct engagement with scholarly contributions."
+        ],
+        "closing": "By offering diverse access models, JAIKE fosters an inclusive research environment, enabling both open-access authors and institutional subscribers to benefit from the latest advancements in AI and related fields."
+      }
+    ]
+  }
+]

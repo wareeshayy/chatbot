@@ -1,0 +1,4 @@
+# Core backend (Phase 2)
+-r requirements-core.txt
+
+# AI / RAG pipeline (Phase 4 — install with: pip install -r requirements-ai.txt)

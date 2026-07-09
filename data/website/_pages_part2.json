@@ -1,0 +1,625 @@
+[
+  {
+    "page_title": "About the Editor-in-Chief",
+    "url": "https://ijaike.org/about-the-editor-in-chief-2/",
+    "person": {
+      "name": "Dr. Biren (Brian) Prasad, Ph.D.",
+      "role": "Editor-in-Chief, International Journal of Artificial Intelligence and Knowledge Engineering (IJAIKE)",
+      "bio": "Dr. Biren (Brian) Prasad is an internationally recognized authority in artificial intelligence, knowledge engineering, and smart product innovation, with a distinguished career spanning academia, industry, and global research collaboration. As Editor-in-Chief of IJAIKE, he brings a rare combination of scholarly rigor, visionary leadership, and real-world impact.",
+      "academic_distinction": "Dr. Prasad holds a Ph.D. in Mechanical and Aerospace Engineering and is the author of several influential books and over 100 peer-reviewed publications across disciplines such as concurrent engineering, knowledge-based systems, product lifecycle management (PLM), and intelligent manufacturing. His work has been cited extensively by researchers worldwide, reflecting his enduring influence on the evolution of intelligent systems and engineering design.",
+      "founding_editor": "He previously served as Editor-in-Chief and is the founding editor of Concurrent Engineering: Research & Applications (CERA)—a pioneering journal in integrated product development that is now celebrating over 33 years of continuous publication.",
+      "links": {
+        "biography": "http://www.brianprasad.com/",
+        "publications": "https://www.researchgate.net/profile/Brian_Prasad/contributions/",
+        "books": "https://brianprasad.com/book.html",
+        "linkedin": "https://www.linkedin.com/in/bprasad/"
+      },
+      "leadership_philosophy": "Dr. Prasad believes that knowledge is the most powerful catalyst for innovation. As a scholarly leader, he champions a culture of research that is inclusive, interdisciplinary, ethically grounded, and impact-driven. He encourages authors to produce work that is not only theoretically sound but also applicable to real-world challenges. He views the role of editor-in-chief as a mentor and community builder, cultivating a global network of researchers and practitioners united by a shared pursuit of excellence in AI and KE.",
+      "industry_impact": "Dr. Prasad has led groundbreaking initiatives that have made organizations leaner, more profitable, and more productive. His expertise in AI applications, knowledge-based engineering, and collaborative product development has empowered companies to optimize performance, enhance efficiency, and accelerate innovation. He has served as a strategic advisor to Fortune 500 companies and government agencies, applying AI and knowledge engineering to solve complex challenges in manufacturing, supply chain, and systems integration.",
+      "global_collaboration": "As a keynote speaker, consultant, and research collaborator, Dr. Prasad engages with academic institutions, global conferences, and innovation ecosystems worldwide. Under his editorial leadership, IJAIKE is committed to publishing high-impact, peer-reviewed research that advances theory and practice, embraces interdisciplinary collaboration, preaches the science and application of knowledge engineering, and promotes responsible AI innovation."
+    }
+  },
+  {
+    "page_title": "About the Associate Editor",
+    "url": "https://ijaike.org/about-the-associate-editor/",
+    "person": {
+      "name": "Dr. K. Vijayakumar",
+      "role": "Associate Editor, International Journal of Artificial Intelligence and Knowledge Engineering (IJAIKE)",
+      "position": "Professor and Chairperson, School of Electrical and Electronics Engineering, SRM Institute of Science and Technology",
+      "bio": "Dr. K. Vijayakumar is a seasoned academic leader and researcher with over 28 years of experience in teaching, research, and institutional development. He currently serves as Professor and Chairperson of the School of Electrical and Electronics Engineering at SRM Institute of Science and Technology, Chennai, India. His work bridges the domains of power electronics, smart grid systems, and renewable energy integration, with a growing focus on AI-driven energy optimization.",
+      "education": [
+        "Ph.D. in Power System Deregulation, SRM Institute of Science and Technology",
+        "M.E. in Power Systems, Annamalai University",
+        "B.E. in Electrical & Electronics Engineering, Annamalai University"
+      ],
+      "research_interests": [
+        "Power electronics applications in smart grids",
+        "Hybrid and renewable energy systems",
+        "AI-based optimization for energy distribution",
+        "Power system deregulation and market dynamics"
+      ],
+      "publications": "He has published extensively in Scopus- and SCI-indexed journals, including Computer Communications, Journal of Medical Systems, Cluster Computing, and International Journal of Reasoning-based Intelligent Systems.",
+      "links": {
+        "srm_profile": "https://www.srmist.edu.in/faculty/dr-k-vijayakumar/",
+        "st_joseph_profile": "https://www.stjosephstechnology.ac.in/web/cse/vijayakumar.php"
+      },
+      "editorial_role": "As Associate Editor of IJAIKE, Dr. Vijayakumar plays a pivotal role in shaping the journal's editorial direction, ensuring that published research meets the highest standards of originality, rigor, and relevance. He actively promotes interdisciplinary collaboration and supports emerging scholars in the fields of AI, knowledge engineering, and intelligent systems."
+    }
+  },
+  {
+    "page_title": "Editorial Charter",
+    "url": "https://ijaike.org/editorial-charter/",
+    "sections": [
+      {
+        "section_title": "Editorial Charter of IJAIKE Journal",
+        "content": "The Journal of Artificial Intelligence and Knowledge Engineering (JAIKE) is a quarterly, peer-reviewed archival journal that advances scholarly excellence in all facets of AI and knowledge-based systems. It provides a platform for researchers, practitioners, and industry professionals to explore novel research and transformative applications, particularly those arising from the cognitive processes of knowledge mining, discovery, acquisition, processing, and distribution in contexts such as IoT and smart product development."
+      },
+      {
+        "section_title": "Mission & Scope",
+        "content": "JAIKE is committed to publishing state-of-the-art research with both theoretical depth and practical significance. The journal welcomes original research articles, empirical studies, system reports, surveys, special issues, book reviews, and editorials on emerging themes in AI and Knowledge Engineering (KEAI). Emphasis is placed on work that bridges disciplines, pushes intellectual boundaries, and drives real-world innovation."
+      },
+      {
+        "section_title": "Editorial Principles & Quality Standards",
+        "content": "All published articles must meet the highest standards of originality, clarity, and contribution to the field. Submissions should provide:",
+        "items": [
+          "Evidence-backed claims validated by empirical results or theoretical analysis.",
+          "Clear descriptions of system-thinking foundations and the underlying principles behind developed tools or platforms.",
+          "Insight into the research journey—what was discovered, learned, and advanced, not just what was done."
+        ],
+        "author_expectations": [
+          "Clearly acknowledge prior work and intellectual contributions.",
+          "Justify the use of new terminology or methodologies by explaining the limitations of existing approaches.",
+          "Be concise while rigorously supporting hypotheses and findings."
+        ]
+      },
+      {
+        "section_title": "Peer Review & Ethical Standards",
+        "content": "All submissions are subject to a rigorous double-blind peer review process, evaluated solely on merit, significance, and alignment with the journal's scope. JAIKE adheres to international ethical guidelines including those set by COPE, ensuring fairness, transparency, and academic integrity."
+      },
+      {
+        "section_title": "Special Publications & Community Engagement",
+        "content": "JAIKE actively supports thought leadership by publishing:",
+        "items": [
+          "Survey articles that provide tutorials or comprehensive literature reviews for a broad scholarly and professional audience.",
+          "Special issues curated by Guest Editors to spotlight timely and impactful themes in AIKE.",
+          "Book reviews and editorials that promote scholarly dialogue."
+        ],
+        "links": {
+          "submission_requirements": "https://ijaike.com/submission-requirements.php",
+          "editorial_policies": "https://eaapublishing.org/journals/index.php/jaike/policies"
+        }
+      }
+    ]
+  },
+  {
+    "page_title": "Call for Papers - Inaugural Issues",
+    "url": "https://ijaike.org/call-for-papers/",
+    "sections": [
+      {
+        "section_title": "Overview",
+        "content": "As technology advances, our products—such as wireless devices, computers, and tablets—are becoming smarter while simultaneously shrinking in size. This transformation is largely driven by the integration of Artificial Intelligence (AI) and Knowledge Engineering (KE), enabling products to exhibit intelligent features, automated processes, and adaptive behaviors. Across research communities, ongoing debates emphasize the critical role of AIKE in shaping the future of smart factories. Traditional product development approaches have evolved into knowledge-based engineering, Internet of Things (IoT)-enabled systems, and AI-driven frameworks, unlocking applications in sectors beyond manufacturing and economics, including education, urban planning, governance, healthcare, and business management. Today, organizations in the U.S. and worldwide are increasingly adopting AI and Knowledge Engineering methodologies, tools, and frameworks to drive strategic innovation, improve collaborative product development, and enhance global competitiveness. The International Journal of Artificial Intelligence & Knowledge Engineering (IJAIKE) invites high-quality original research papers, review articles, and case studies for publication in its inaugural issues. As a peer-reviewed, open-access journal, IJAIKE is committed to advancing the frontiers of AI and knowledge engineering by providing a platform for innovative, interdisciplinary, and impactful research."
+      },
+      {
+        "section_title": "Scope of the Paper Contents",
+        "core_topics_ai": [
+          "Machine Learning & Deep Learning",
+          "Natural Language Processing (NLP)",
+          "Computer Vision & Image Understanding",
+          "Reinforcement Learning & Autonomous Agents",
+          "Explainable AI (XAI) & Trustworthy AI",
+          "Generative AI & Foundation Models",
+          "AI Ethics, Fairness, and Bias Mitigation",
+          "AI for Edge, IoT, and Embedded Systems",
+          "Multi-agent Systems & Swarm Intelligence",
+          "AI in Robotics and Human-Robot Interaction"
+        ],
+        "knowledge_engineering_topics": [
+          "Ontologies, Semantic Web, and Knowledge Graphs",
+          "Knowledge Acquisition, Modeling, and Reasoning",
+          "Rule-Based Systems & Expert Systems",
+          "Intelligent Decision Support Systems",
+          "Cognitive Architectures & Symbolic AI",
+          "Hybrid AI (Symbolic + Sub-symbolic Integration)",
+          "Knowledge Discovery in Databases (KDD)",
+          "Automated Planning & Problem Solving",
+          "Commonsense Reasoning & Contextual Intelligence"
+        ],
+        "applied_ai_topics": [
+          "AI in Healthcare, Biomedicine, and Genomics",
+          "AI for Smart Manufacturing & Industry 4.0",
+          "AI in Education, Learning Analytics, and EdTech",
+          "AI for Urban Planning, Smart Cities, and Sustainability",
+          "AI in Finance, Law, and Governance",
+          "AI for Climate Modeling and Environmental Monitoring",
+          "AI in Cybersecurity and Threat Detection",
+          "AI for Creativity, Art, and Design",
+          "AI in Social Good and Humanitarian Applications"
+        ],
+        "ke_in_practice_topics": [
+          "Knowledge-Based Product Development",
+          "Intelligent Process Planning & Optimization",
+          "Knowledge Engineering for Digital Twins",
+          "AI-Driven Innovation in Supply Chains",
+          "Knowledge Management in Organizations",
+          "AI for Scientific Discovery and Research Automation",
+          "Methodologies, Emerging architectures, and Frameworks",
+          "Case Studies and Experimental Research."
+        ]
+      },
+      {
+        "section_title": "Paper Submission Guidelines",
+        "content": "Authors are encouraged to review the Author Submission Guidelines before submitting. Manuscripts must be original, unpublished, and not under consideration elsewhere. All submissions to the inaugural issues will undergo a rigorous double-blind peer review process, with authors receiving decisions within 3 to 6 months. The final paper selection will be based on originality, relevance, long-term reference value, and quality of presentation.",
+        "important_notes": [
+          "Open Access: All accepted papers will be published under open-access terms, ensuring global visibility and citation potential.",
+          "Flexible APC Model: APC is calculated based on the size and complexity of the final formatted manuscript.",
+          "Waivers Available: IJAIKE offers APC waivers for eligible authors from low-income regions or early-career researchers."
+        ],
+        "submission_portal": "https://mc04.manuscriptcentral.com/jaike",
+        "submission_requirements": "https://ijaike.org/submission-requirements/",
+        "journal_website": "http://IJAIKE.ORG"
+      },
+      {
+        "section_title": "Limited-Time 50% APC Discount",
+        "content": "As part of our commitment to advancing global AI scholarship, the International Journal of Artificial Intelligence and Knowledge Engineering (IJAIKE) is pleased to offer a 50% discount on Article Processing Charges (APC) for all papers submitted by December 30, 2025.",
+        "steps": [
+          "Prepare your manuscript according to the IJAIKE author guidelines.",
+          "Submit your paper via our online portal by December 30, 2025.",
+          "Enjoy the automatic APC reduction upon acceptance."
+        ],
+        "deadline": "December 30, 2025"
+      }
+    ]
+  },
+  {
+    "page_title": "CFP Special Issues",
+    "url": "https://ijaike.org/cfp-special-issues/",
+    "special_issues": [
+      {
+        "title": "Call for Papers: Int. Journal of AI and Knowledge Engineering (IJAIKE) - Inaugural Issues",
+        "editors": [
+          "Biren (Brian) Prasad, Ph.D.",
+          "K. Vijayakumar, Ph.D."
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/07/Call-for-Papers-Inaugural-Issues-of-IJAIKE-Journal-2.pdf"
+      },
+      {
+        "title": "Special Issue on \"Generative AI\"",
+        "guest_editors": [
+          "Vikram Ahuja",
+          "Nitesh Kumar"
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/07/Call-for-Papers-IJAIKE-Special-Issue-on-Generative-AI.pdf"
+      },
+      {
+        "title": "Special Issue on \"Agentic AI\"",
+        "guest_editors": [
+          "Naina Chowdhary Vallurupalli, Ph.D.",
+          "K. Vijayakumar, Ph.D."
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/07/Call-for-Papers-IJAIKE-Special-Issue-on-Agentic-AI.pdf"
+      },
+      {
+        "title": "Special Issue on Applications of Natural Language Processing (NLP) in \"Software Security and Vulnerability Management\"",
+        "guest_editors": [
+          "Mst Shapna Akter, Ph.D.",
+          "Yao Qiang, Ph.D."
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/08/Call-for-Papers-NLP-in-Software-Security-and-Vulnerability-Management-Rev1.pdf"
+      },
+      {
+        "title": "Special Issue on \"AI for Intelligent Wireless Communications and Networked Systems\"",
+        "guest_editors": [
+          "Muhammad Furqan Zia, Ph.D.",
+          "Maria Siddiqua, Ph.D."
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/07/Call-for-Papers-AI-for-Intelligent-Wireless-Communication-and-Networked-Systems.pdf"
+      },
+      {
+        "title": "Special Issue on \"AI in Education\"",
+        "guest_editors": [
+          "Pratima Sahu, Ph.D.",
+          "Dana Amirbayeva, Ph.D."
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/07/Call-for-Papers-IJAIKE-Special-Issue-on-AI-in-Education-Rev1.pdf"
+      },
+      {
+        "title": "Special Issue on \"AI-Driven Concurrent Engineering\"",
+        "guest_editors": [
+          "Biren (Brian) Prasad, Ph.D.",
+          "Parisa Ghodous, Ph.D."
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/07/Call-for-Papers-IJAIKE-Special-Issue-on-AI-driven-Concurrent-Engineering-1.pdf"
+      },
+      {
+        "title": "Special Issue on \"AI-Driven Robotics and Automation\"",
+        "guest_editors": [
+          "Biren Prasad"
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/07/Call-for-Papers-IJAIKE-Special-Issue-on-AIRobotrics-and-Automation.pdf"
+      },
+      {
+        "title": "Special Issue on \"Generative AI in Enterprise Automation: Research, Innovations, and Applications\"",
+        "guest_editors": [
+          "Sai Kumar Arava",
+          "Meghana Puvvadi"
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/08/Call-for-Papers-Research-Applications-of-Generative-AI-in-Enterprise-Automation_Rev1.pdf"
+      },
+      {
+        "title": "Special Issue on \"AI for Healthcare\"",
+        "guest_editors": [
+          "Chengyin Li, Ph.D.",
+          "Soumyanil Banerjee, Ph.D."
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/08/Call-for-Papers-Special-Issue-of-IJAIKE-on-AI-for-Healthcare4.pdf"
+      },
+      {
+        "title": "Special Issue on \"Explainability in AI\"",
+        "guest_editors": [
+          "Neeraj Tiwary, Ph.D.",
+          "Veronica Breene"
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/07/Call-for-Papers-IJAIKE-Journal-Special-Issue-on-Explainability-in-AI.pdf"
+      },
+      {
+        "title": "Special Issue on \"AI for Bioinformatics in Healthcare\"",
+        "guest_editors": [
+          "Chikoo Cherian, Ph.D.",
+          "Haveelah Mutluri"
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/07/Call-for-Papers-Special-Issue-of-IJAIKE-on-AI-for-Bioinformatics-in-Healthcare_Rev3.pdf"
+      },
+      {
+        "title": "Special Issue on \"AI for Supply Chain Management\"",
+        "guest_editors": [
+          "Ram Bala, Ph.D.",
+          "Rohit Jacob"
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/07/Call-for-Papers-Special-Issue-on-AI-for-Supply-Chain-Management-2.pdf"
+      },
+      {
+        "title": "Special Issue on \"AI for Product Life-cycle Management (PLM)\"",
+        "guest_editors": [
+          "Biren (Brian) Prasad, Ph.D."
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/10/Call-for-Papers-IJAIKE-Journal-Special-Issue-on-AI-for-PLM.pdf"
+      },
+      {
+        "title": "Special Issue on \"Quantum Intelligence Computing into Industry 5.0\"",
+        "guest_editors": [
+          "Biswan Senapati, Ph.D.",
+          "Sandeep Kumar Davuluri, Ph.D."
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/10/Call-For-Papers-Special-Issue-on-Quantum-Intelligence-Computing-into-Industry-5.0.pdf"
+      },
+      {
+        "title": "Special Issue on \"AI-Driven Cyber-Physical Systems for Sustainable Energy and Smart Infrastructure\"",
+        "guest_editors": [
+          "Adeleke Olaoluwa",
+          "Simeon Ogunbunmi"
+        ],
+        "download": "https://ijaike.org/wp-content/uploads/2025/07/Call-for-Papers-NLP-in-Software-Security-and-Vulnerability-Management-Rev1.pdf"
+      },
+      {
+        "title": "Roles and Responsibilities of the Guest Editors for the Special Issues of the AIKE Journal",
+        "download": "https://ijaike.org/wp-content/uploads/2025/06/Roles-and-Responsibilities-of-Guest-Editors-for-IJAIKE.pdf"
+      }
+    ]
+  },
+  {
+    "page_title": "Submission Requirements",
+    "url": "https://ijaike.org/submission-requirements/",
+    "intro": "Thank you for considering the International Journal of Artificial Intelligence & Knowledge Engineering (AIKE Journal) for your manuscript. To ensure a smooth and timely review, please prepare and submit your work according to the following guidelines.",
+    "sections": [
+      {
+        "section_number": "1",
+        "section_title": "Manuscript Preparation",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Authors must ensure that their manuscripts are original, unpublished, and not under consideration elsewhere. Submissions should be written in clear, concise English and formatted as described in the following section 2 below. All figures, tables, and references must be properly cited and integrated into the text."
+          },
+          {
+            "type": "paragraph",
+            "text": "The contents of the submitted article must be within the scope of the JAIKE journal and be of sufficient quality. If not, the article will not be reviewed. Please read the journal's Aims and Scope to see if your article is appropriate and suitable for the Journal."
+          },
+          {
+            "type": "paragraph",
+            "text": "We welcome the following submission types in AI and knowledge engineering:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Original Research Articles",
+              "Review Papers",
+              "Case Studies & Applications",
+              "Short Communications"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Special topics for our inaugural issues include:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Agentic AI",
+              "Generative AI",
+              "AI for Healthcare",
+              "AI for Enterprise Automation",
+              "Explainability in AI & Safety",
+              "Knowledge Graphs",
+              "Semantic Web",
+              "Software Security and Vulnerability Management",
+              "AI for Wireless Communication and Networking",
+              "AI for Education",
+              "AI-driven Concurrent Engineering",
+              "AI-driven Robotics and Automation",
+              "AI for Bioinformatics in Healthcare"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Submissions may incorporate material previously published in conference proceedings, provided that:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Additional Content: The manuscript contains significant, unpublished extensions—new experiments, proofs, results, analyses, or expanded discussion—that go beyond the conference version.",
+              "Distinct Presentation: The journal submission is sufficiently different to avoid copyright infringement.",
+              "Citation of Original: Authors cite and credit the prior conference paper in the reference list."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "This journal format offers the opportunity to present a more complete, polished version of your work."
+          }
+        ]
+      },
+      {
+        "section_number": "2",
+        "section_title": "Required Documentation",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "To ensure a smooth and timely review, please prepare and submit your work according to the guidelines below. Papers submitted in other formats (e.g., a camera-ready or conference style) will be rejected without review. Manuscripts should be submitted in Microsoft Word (.doc or .docx) format. PDF submissions will not be accepted. The file should include the title, abstract, keywords, main text, references, and author information."
+          },
+          {
+            "type": "subsection",
+            "title": "Formatting Requirements",
+            "items": [
+              "Typeface: 12-pt Times New Roman (or equivalent), double-spaced",
+              "Margins: 1\" (2.5 cm) on all sides",
+              "Page numbering: Bottom-center"
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Author Information",
+            "text": "Each submission must include the full names, affiliations, and email addresses of all contributing authors. The corresponding author should be identified and will serve as the primary contact throughout the review process."
+          },
+          {
+            "type": "subsection",
+            "title": "Abstract & Keywords",
+            "items": [
+              "Abstract: 250–350 words summarizing objectives, methods, key results, and conclusions",
+              "Keywords: 7–9 terms reflecting your paper's core themes"
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "Main Manuscript Structure",
+            "text": "List clearly—using bullets or numbering—the hypotheses or research questions your study addresses. This helps editors and reviewers assess novelty and contribution.",
+            "additional": "Organize your text under these recommended headings:",
+            "items": [
+              "Introduction",
+              "Related Work",
+              "Methodology",
+              "Results",
+              "Discussion",
+              "Conclusion"
+            ],
+            "note": "Use numbered subsections to enhance readability."
+          },
+          {
+            "type": "subsection",
+            "title": "Figures & Tables",
+            "items": [
+              "Resolution: ≥ 300 dpi for images",
+              "Placement: Embed near first citation",
+              "Numbering & Captions: Sequential (e.g., Figure 1, Table 2) with descriptive legends"
+            ]
+          },
+          {
+            "type": "subsection",
+            "title": "References Style",
+            "text": "IEEE or APA—apply consistently"
+          }
+        ]
+      },
+      {
+        "section_number": "3",
+        "section_title": "Ethical Compliance",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Authors are expected to adhere to ethical standards in research and publishing. Any conflicts of interest, funding sources, or ethical approvals (where applicable) must be disclosed in the manuscript."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Policy Violation: Breach of this policy leads to immediate rejection and a six-month ban on further submissions to AIKE Journal.",
+              "Permissions: Secure and cite permissions for any reused material (figures, tables, text).",
+              "Conflict of Interest: Disclose any financial or non-financial relationships affecting the work."
+            ]
+          }
+        ]
+      },
+      {
+        "section_number": "4",
+        "section_title": "Plagiarism Policy",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "All submissions are screened for plagiarism. Manuscripts with significant overlap with previously published work will be rejected. Authors are encouraged to use plagiarism detection tools before submission."
+          }
+        ]
+      },
+      {
+        "section_number": "5",
+        "section_title": "Timeframe for Resubmission",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Authors are encouraged to resubmit within 6 months of the original decision. Delayed resubmissions may require justification or may be declined if the topic is no longer aligned with the journal's current focus."
+          }
+        ]
+      },
+      {
+        "section_number": "6",
+        "section_title": "Submission Process",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Manuscripts should be submitted online at: https://mc04.manuscriptcentral.com/jaike"
+          },
+          {
+            "type": "paragraph",
+            "text": "Please include \"IJAIKE Submission\" in the subject line."
+          }
+        ]
+      },
+      {
+        "section_number": "7",
+        "section_title": "Review and Decision",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "All manuscripts undergo a double-blind peer review process. Authors will be notified of the editorial decision within 4–6 weeks. Revisions, if requested, should be submitted within the specified timeframe."
+          }
+        ]
+      },
+      {
+        "section_number": "8",
+        "section_title": "Copyright and Licensing",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Upon acceptance, authors will be required to sign a copyright transfer agreement. IJAIKE publishes under an open-access model, allowing free access to published content while retaining author rights."
+          }
+        ]
+      },
+      {
+        "section_number": "9",
+        "section_title": "Open Access & Copyright",
+        "content": [
+          {
+            "type": "list",
+            "items": [
+              "License: CC BY 4.0—free, perpetual reuse with attribution",
+              "Copyright: Authors retain copyright and grant AIKE Journal first publication rights"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "We look forward to your submission and to advancing AI and knowledge-engineering research together."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "page_title": "Submission Procedure",
+    "url": "https://ijaike.org/submission-procedure/",
+    "intro": "JAIKE Journal has deployed the Clarivate ScholarOne Manuscript Central system for managing manuscript submissions, setting up the editorial workflow, and tracking our editorial tasks. Please submit your original manuscript in Microsoft Word format (.doc or .docx) for possible publication via an ONLINE Submission Link.. If you have not used the Manuscript Central site before, or don't have a Log In ID, you may be asked to create an account.",
+    "sections": [
+      {
+        "section_number": "1",
+        "section_title": "Initial Submission",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Authors should submit their manuscripts using the following ONLINE Submission Link: https://mc04.manuscriptcentral.com/jaike with the subject line: \"IJAIKE Submission – [Paper Title].\" Submissions must follow the IJAIKE Manuscript Submission Requirements."
+          },
+          {
+            "type": "paragraph",
+            "text": "You will be asked for the basic information about the paper (title, authors, contact information, abstract, Paper Type, etc.). You may be asked to confirm several declarations about your understanding of the submission requirements. The last item in the form may contain 3 survey questions. Replying to these questions is a mandatory part of the submission procedure, and your submission cannot be processed without these answers. The online form also explains how to upload your manuscript in a preferred Word format to the Manuscript Central Submission Management System. There is no charge to submit an initial manuscript, but there will be a publication fee, commonly referred to as Article Publication Charges (APC), once the paper is accepted for publication."
+          }
+        ]
+      },
+      {
+        "section_number": "2",
+        "section_title": "Acknowledgment of Receipt",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Upon receiving the manuscript, the editorial office will send an acknowledgment email within 3-7 business days. If you do not receive confirmation, please follow up to ensure successful delivery."
+          }
+        ]
+      },
+      {
+        "section_number": "3",
+        "section_title": "Preliminary Review",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The editorial team will conduct an initial screening to assess the manuscript's relevance, originality, and adherence to submission requirements. Manuscripts that do not meet basic requirements may be returned for revision before peer review."
+          }
+        ]
+      },
+      {
+        "section_number": "4",
+        "section_title": "Peer Review Process",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Eligible manuscripts undergo a double-blind peer review by at least two independent reviewers. The process typically takes 4–8 weeks. Reviewers evaluate the manuscript based on scientific merit, clarity, methodology, long-term reference value, content quality, and contribution to the advancement in the field of AI and Knowledge Engineering."
+          }
+        ]
+      },
+      {
+        "section_number": "5",
+        "section_title": "Editorial Decision",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Based on reviewer feedback, the editorial board will make one of the following decisions:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "Accept",
+              "Minor Revision",
+              "Major Revision",
+              "Reject"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Authors will be notified via email, along with reviewer comments and revision instructions if applicable."
+          }
+        ]
+      },
+      {
+        "section_number": "6",
+        "section_title": "Revision and Resubmission",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "If revisions are requested, authors must submit the revised manuscript within the specified timeframe, along with a detailed response to reviewers' comments. Delayed resubmissions may be treated as new submissions."
+          }
+        ]
+      },
+      {
+        "section_number": "7",
+        "section_title": "Final Acceptance and Publication",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Once accepted, the manuscript will undergo final formatting and proofreading. Authors will receive a galley proof for approval before publication. The article will then be published online under IJAIKE's open-access model."
+          }
+        ]
+      }
+    ]
+  }
+]

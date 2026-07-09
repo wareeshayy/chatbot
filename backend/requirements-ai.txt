@@ -1,0 +1,9 @@
+# Core backend dependencies (Phase 2)
+-r requirements-core.txt
+
+# AI / RAG (Phase 4)
+langchain==0.3.13
+langchain-openai==0.2.14
+langchain-community==0.3.13
+chromadb==0.5.23
+sentence-transformers==3.3.1
