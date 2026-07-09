@@ -9,6 +9,7 @@ import type {
   User,
 } from "./types";
 
+// Base URL of the chatbot backend API
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000/api/v1";
 
 class ApiError extends Error {
