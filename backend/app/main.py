@@ -55,6 +55,28 @@ def create_app() -> FastAPI:
             },
         )
 
+    @app.exception_handler(Exception)
+    async def general_exception_handler(request: Request, exc: Exception) -> JSONResponse:
+        request_id = request.headers.get("X-Request-ID", "-")
+        message = str(exc)
+        code = "INTERNAL_SERVER_ERROR"
+        status_code = 500
+        
+        # Detect Gemini quota limit error
+        if "quota exceeded" in message.lower() or "resource_exhausted" in message.lower() or "429" in message:
+            message = "Gemini API quota exceeded (20 requests/day limit on Free Tier). Please try again later or add a paid API key."
+            code = "QUOTA_EXCEEDED"
+            status_code = 429
+
+        return JSONResponse(
+            status_code=status_code,
+            content={
+                "detail": message,
+                "code": code,
+                "request_id": request_id,
+            },
+        )
+
     app.include_router(api_router)
 
     @app.get("/")

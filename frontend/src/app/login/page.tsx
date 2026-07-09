@@ -122,17 +122,6 @@ export default function LoginPage() {
             {mode === "login" ? "Register" : "Sign in"}
           </button>
         </p>
-
-        <div className="mt-6 rounded-sm bg-slate-50 p-3 text-xs text-slate-600">
-          <p className="font-medium text-slate-700">Admin login requires backend setup:</p>
-          <ol className="mt-2 list-decimal space-y-1 pl-4">
-            <li>Start Docker Desktop</li>
-            <li><code className="text-[11px]">docker compose -f docker/docker-compose.yml up -d</code></li>
-            <li><code className="text-[11px]">cd backend &amp;&amp; .\setup-database.ps1</code></li>
-            <li><code className="text-[11px]">uvicorn app.main:app --reload --port 8000</code></li>
-          </ol>
-          <p className="mt-2">Then: admin@ijaike.org / Admin@12345</p>
-        </div>
       </div>
     </div>
   );
