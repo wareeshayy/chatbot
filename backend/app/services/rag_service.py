@@ -35,7 +35,7 @@ class RAGService:
     ) -> RAGResult:
         start = time.perf_counter()
 
-        if self._is_index_empty() and not settings.gemini_api_key:
+        if await self._is_index_empty() and not settings.gemini_api_key:
             faq = faq_fallback(query)
             if faq:
                 answer, faq_citations = faq
@@ -91,9 +91,9 @@ class RAGService:
             latency_ms=latency_ms,
         )
 
-    def _is_index_empty(self) -> bool:
+    async def _is_index_empty(self) -> bool:
         try:
-            return self.chroma.collection.count() == 0
+            return await self.chroma.count() == 0
         except Exception:
             return True
 
@@ -101,7 +101,7 @@ class RAGService:
         k = top_k or settings.rag_top_k
         if not settings.gemini_api_key:
             try:
-                count = self.chroma.collection.count()
+                count = await self.chroma.count()
                 if count == 0:
                     return []
             except Exception:
@@ -109,7 +109,7 @@ class RAGService:
 
         try:
             query_embedding = embed_query(query)
-            results = self.chroma.search(query_embedding, top_k=k)
+            results = await self.chroma.search(query_embedding, top_k=k)
         except Exception as exc:
             logger.warning("Vector search failed, using empty context: %s", exc)
             return []

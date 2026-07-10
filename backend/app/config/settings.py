@@ -57,6 +57,9 @@ class Settings(BaseSettings):
     embedding_provider: Literal["gemini", "openai", "sentence_transformer"] = "gemini"
     sentence_transformer_model: str = "all-MiniLM-L6-v2"
 
+    # Vector store: chroma (local) or mongodb (Atlas Vector Search for production)
+    vector_store: Literal["chroma", "mongodb"] = "chroma"
+
     # ChromaDB
     chroma_persist_dir: str = "./data/chroma"
     chroma_collection_name: str = "ijaike_kb"

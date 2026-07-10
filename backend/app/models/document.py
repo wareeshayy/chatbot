@@ -51,6 +51,7 @@ class DocumentChunk(BeanieDocument):
     section_title: str | None = None
     token_count: int | None = None
     chunk_metadata: dict[str, Any] | None = None
+    embedding: list[float] | None = None
     created_at: datetime = Field(default_factory=utcnow)
 
     class Settings:

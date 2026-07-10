@@ -39,7 +39,7 @@ class IngestService:
             chunks = self._chunk_pages(pages, settings.chunk_size, settings.chunk_overlap)
 
             await self.chunk_repo.delete_by_document(document.id)
-            self.chroma.delete_by_document(str(document.id))
+            await self.chroma.delete_by_document(str(document.id))
 
             if not chunks:
                 raise ValueError("No text content extracted from document")
@@ -73,14 +73,14 @@ class IngestService:
                 })
 
             embeddings = embed_texts(chroma_texts)
-            self.chroma.add_chunks(chroma_ids, embeddings, chroma_texts, chroma_metas)
+            await self.chroma.add_chunks(chroma_ids, embeddings, chroma_texts, chroma_metas)
 
             document.chunk_count = len(chunks)
             document.status = DocumentStatus.INDEXED
             document.indexed_at = datetime.now(timezone.utc)
             await document.save()
 
-            logger.info("Indexed document %s: %d chunks in ChromaDB", document.id, len(chunks))
+            logger.info("Indexed document %s: %d chunks in vector store", document.id, len(chunks))
 
         except Exception as exc:
             logger.exception("Failed to ingest document %s", document.id)
