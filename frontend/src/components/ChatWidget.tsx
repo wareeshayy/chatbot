@@ -46,30 +46,30 @@ interface ReferenceLink {
 
 function getSuggestedLinks(answerText: string, userQuery: string): ReferenceLink[] {
   const links: ReferenceLink[] = [];
-  const text = (answerText + " " + userQuery).toLowerCase();
+  const text = userQuery.toLowerCase();
   
-  if (text.includes("format") || text.includes("style") || text.includes("template") || text.includes("publication") || text.includes("font") || text.includes("word") || text.includes("margin") || text.includes("page")) {
+  if (/\b(format|formatting|style|styles|template|templates|guidelines?|fonts?|margins?|word|pages?|typeface|spacing)\b/i.test(text)) {
     links.push({ label: "Formatting Guidelines", url: "https://ijaike.org/formatting-for-publication/" });
   }
-  if (text.includes("submit") || text.includes("manuscript") || text.includes("portal") || text.includes("central") || text.includes("subject line") || text.includes("send")) {
+  if (/\b(submits?|submissions?|manuscripts?|portals?|central|uploads?|uploading|send)\b/i.test(text)) {
     links.push({ label: "Submission Requirements", url: "https://ijaike.org/submission-requirements/" });
     links.push({ label: "Manuscript Central Portal", url: "https://mc04.manuscriptcentral.com/jaike" });
   }
-  if (text.includes("apc") || text.includes("fee") || text.includes("charge") || text.includes("waiver") || text.includes("cost") || text.includes("price") || text.includes("discount")) {
+  if (/\b(apc|fees?|charges?|waivers?|costs?|prices?|pricing|discounts?|pay|payments?|paying)\b/i.test(text)) {
     links.push({ label: "Article Processing Charges (APC)", url: "https://ijaike.org/article-processing-charges-apc/" });
   }
-  if (text.includes("review") || text.includes("double-blind") || text.includes("peer") || text.includes("referee") || text.includes("anonymity")) {
+  if (/\b(reviews?|reviewed|peer|double-blind|referees?|anonymity)\b/i.test(text)) {
     links.push({ label: "Peer Review Process", url: "https://ijaike.org/reviewing-process/" });
   }
-  if (text.includes("special issue") || text.includes("proposal") || text.includes("call for papers") || text.includes("cfp")) {
+  if (/\b(special issues?|proposals?|propose|call for papers|cfp)\b/i.test(text)) {
     links.push({ label: "Special Issue Process", url: "https://ijaike.org/special-issue-process/" });
   }
-  if (text.includes("contact") || text.includes("email") || text.includes("support") || text.includes("office") || text.includes("help")) {
+  if (/\b(contacts?|emails?|support|office|help|reach)\b/i.test(text)) {
     links.push({ label: "Contact Us", url: "https://ijaike.org/contacts-us/" });
   }
   
-  // If no specific links found, provide the official homepage
-  if (links.length === 0) {
+  // If no specific links found, but the query is explicitly asking for website/homepage/links of the journal, provide the homepage.
+  if (links.length === 0 && /\b(homepage|website|journal|ijaike|jaike|links?|urls?|info|information|about)\b/i.test(text)) {
     links.push({ label: "IJAIKE Homepage", url: "https://ijaike.org/" });
   }
   
