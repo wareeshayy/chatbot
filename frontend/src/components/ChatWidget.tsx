@@ -39,6 +39,50 @@ function getDocUrl(title: string): string {
   return "https://ijaike.org/";
 }
 
+interface ReferenceLink {
+  label: string;
+  url: string;
+}
+
+function getSuggestedLinks(answerText: string, userQuery: string): ReferenceLink[] {
+  const links: ReferenceLink[] = [];
+  const text = (answerText + " " + userQuery).toLowerCase();
+  
+  if (text.includes("format") || text.includes("style") || text.includes("template") || text.includes("publication") || text.includes("font") || text.includes("word") || text.includes("margin") || text.includes("page")) {
+    links.push({ label: "Formatting Guidelines", url: "https://ijaike.org/formatting-for-publication/" });
+  }
+  if (text.includes("submit") || text.includes("manuscript") || text.includes("portal") || text.includes("central") || text.includes("subject line") || text.includes("send")) {
+    links.push({ label: "Submission Requirements", url: "https://ijaike.org/submission-requirements/" });
+    links.push({ label: "Manuscript Central Portal", url: "https://mc04.manuscriptcentral.com/jaike" });
+  }
+  if (text.includes("apc") || text.includes("fee") || text.includes("charge") || text.includes("waiver") || text.includes("cost") || text.includes("price") || text.includes("discount")) {
+    links.push({ label: "Article Processing Charges (APC)", url: "https://ijaike.org/article-processing-charges-apc/" });
+  }
+  if (text.includes("review") || text.includes("double-blind") || text.includes("peer") || text.includes("referee") || text.includes("anonymity")) {
+    links.push({ label: "Peer Review Process", url: "https://ijaike.org/reviewing-process/" });
+  }
+  if (text.includes("special issue") || text.includes("proposal") || text.includes("call for papers") || text.includes("cfp")) {
+    links.push({ label: "Special Issue Process", url: "https://ijaike.org/special-issue-process/" });
+  }
+  if (text.includes("contact") || text.includes("email") || text.includes("support") || text.includes("office") || text.includes("help")) {
+    links.push({ label: "Contact Us", url: "https://ijaike.org/contacts-us/" });
+  }
+  
+  // If no specific links found, provide the official homepage
+  if (links.length === 0) {
+    links.push({ label: "IJAIKE Homepage", url: "https://ijaike.org/" });
+  }
+  
+  // Deduplicate links by URL
+  const seen = new Set<string>();
+  return links.filter(link => {
+    if (seen.has(link.url)) return false;
+    seen.add(link.url);
+    return true;
+  }).slice(0, 3);
+}
+
+
 function makeMessage(
   role: Message["role"],
   content: string,
@@ -358,9 +402,11 @@ export function ChatWidget() {
               </div>
             ) : (
               <div className="space-y-4">
-                {messages.map((m) => {
+                {messages.map((m, idx) => {
                   const isUser = m.role === "user";
                   const customMsg = m as Message & { attachedFile?: AttachedFile | null };
+                  const userQuery = !isUser && idx > 0 ? messages[idx - 1].content : "";
+                  const suggestedLinks = !isUser ? getSuggestedLinks(m.content, userQuery) : [];
 
                   return (
                     <div
@@ -469,7 +515,25 @@ export function ChatWidget() {
                                 })}
                               </div>
                             )}
+                            {/* Suggested Reference Links */}
+                            {suggestedLinks.length > 0 && (
+                              <div className="flex flex-wrap gap-1.5 px-1 select-none mt-2">
+                                {suggestedLinks.map((link, idx) => (
+                                  <a
+                                    key={idx}
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-[#d4a843]/30 bg-white hover:bg-slate-50 text-slate-700 hover:text-[#d4a843] transition text-[10px] font-medium shadow-sm"
+                                    title={`Open ${link.label} on ijaike.org`}
+                                  >
+                                    <span>🔗 {link.label}</span>
+                                  </a>
+                                ))}
+                              </div>
+                            )}
                           </div>
+
                         )}
                       </div>
                     </div>
