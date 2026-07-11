@@ -75,9 +75,9 @@ async def ingest_pdfs(*, force_reindex: bool = False) -> None:
         print(f"Processing: {item['title']}...")
         try:
             await ingest.process_document(doc_id)
-            print(f"  ✓ Indexed: {item['title']}")
+            print(f"  [OK] Indexed: {item['title']}")
         except Exception as exc:
-            print(f"  ✗ Failed: {item['title']} — {exc}")
+            print(f"  [ERROR] Failed: {item['title']} — {exc}")
 
     await close_mongo_connection()
     print("\nPDF ingestion complete.")

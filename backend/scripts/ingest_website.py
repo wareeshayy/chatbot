@@ -106,7 +106,7 @@ async def ingest_website() -> None:
 
         print(f"Processing: {title}...")
         await ingest.process_document(doc_id)
-        print(f"  ✓ Indexed: {title}")
+        print(f"  [OK] Indexed: {title}")
 
     await close_mongo_connection()
     print("\nAll website pages ingested into MongoDB + ChromaDB.")

@@ -10,7 +10,20 @@ import type {
 } from "./types";
 
 // Base URL of the chatbot backend API
-const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000/api/v1";
+function getApiBaseUrl(): string {
+  if (process.env.NEXT_PUBLIC_API_URL) {
+    return process.env.NEXT_PUBLIC_API_URL;
+  }
+  if (typeof window !== "undefined") {
+    const hostname = window.location.hostname;
+    // If not running on localhost, default to the relative path for Vercel production rewrites
+    if (hostname !== "localhost" && hostname !== "127.0.0.1" && hostname !== "[::1]") {
+      return "/api/v1";
+    }
+  }
+  return "http://127.0.0.1:8000/api/v1";
+}
+
 
 class ApiError extends Error {
   constructor(
@@ -27,6 +40,7 @@ async function request<T>(
   options: RequestInit = {},
   token?: string | null,
 ): Promise<T> {
+  const API_URL = getApiBaseUrl();
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
     ...(options.headers as Record<string, string>),
