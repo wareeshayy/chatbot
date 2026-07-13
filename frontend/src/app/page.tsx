@@ -38,7 +38,7 @@ export default function HomePage() {
           </span>
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight">
             International Journal of Artificial Intelligence <br className="hidden md:block"/>
-            &amp; Knowledge Engineering <span className="text-[#d4a843]">(IJAIKE)</span>
+            &amp; Knowledge Engineering <span className="text-[#d4a843]">(JAIKE)</span>
           </h1>
           <p className="mt-4 text-base md:text-lg text-white/80 max-w-3xl leading-relaxed">
             A premier peer-reviewed, open-access journal publishing high-quality theoretical and applied research at the intersection of AI paradigms, Knowledge Representation, and IoT engineering.
@@ -72,15 +72,15 @@ export default function HomePage() {
       <section className="bg-white border-b border-slate-200 select-none py-8 px-4">
         <div className="mx-auto max-w-6xl grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div className="p-3">
-            <p className="text-xl md:text-3xl font-bold text-[#0a1628]">4–8 Weeks</p>
-            <p className="text-xs text-slate-500 uppercase tracking-wider mt-1">Average Peer Review</p>
+            <p className="text-xl md:text-3xl font-bold text-[#0a1628]">2–4 Weeks</p>
+            <p className="text-xs text-slate-500 uppercase tracking-wider mt-1">Average per review</p>
           </div>
           <div className="p-3 border-l border-slate-100">
             <p className="text-xl md:text-3xl font-bold text-[#0a1628]">4–6 Weeks</p>
             <p className="text-xs text-slate-500 uppercase tracking-wider mt-1">Decision to Publish</p>
           </div>
           <div className="p-3 border-l border-slate-100">
-            <p className="text-xl md:text-3xl font-bold text-[#d4a843]">$99/Page</p>
+            <p className="text-xl md:text-3xl font-bold text-[#d4a843]">$49/Page</p>
             <p className="text-xs text-slate-500 uppercase tracking-wider mt-1">Inaugural APC Rate</p>
           </div>
           <div className="p-3 border-l border-slate-100">
@@ -123,14 +123,11 @@ export default function HomePage() {
           {/* Recent Articles */}
           <section className="text-left">
             <h2 className="text-2xl font-bold text-[#0a1628] border-b-2 border-slate-200 pb-2.5">
-              Featured Articles &amp; Recent Releases
+              Featured Articles &amp; Recent Releases <span className="text-slate-500 font-normal text-lg">(In Development)</span>
             </h2>
             <div className="mt-6 space-y-6">
               {recentArticles.map((article, idx) => (
                 <div key={idx} className="p-6 bg-white border border-slate-200/80 rounded-2xl shadow-sm hover:shadow-md transition">
-                  <span className="inline-block bg-[#0a1628]/5 text-[#0a1628] px-2.5 py-0.5 rounded text-[10px] font-semibold tracking-wide uppercase">
-                    {article.category}
-                  </span>
                   <h3 className="font-bold text-slate-800 text-sm mt-2 hover:text-[#d4a843] transition cursor-pointer">
                     {article.title}
                   </h3>
@@ -158,11 +155,11 @@ export default function HomePage() {
             <ul className="mt-4 space-y-2 text-xs text-white/90">
               <li className="flex items-start gap-2">
                 <span className="text-[#d4a843]">✓</span>
-                <span><strong>50% APC Discount</strong> for submissions by Dec 30, 2025.</span>
+                <span><strong>50% APC Discount</strong> for submissions by Dec 30, 2026.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#d4a843]">✓</span>
-                <span><strong>Flat $99/page</strong> for accepted text and illustrations.</span>
+                <span><strong>Flat $49/page</strong> for accepted text and illustrations.</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-[#d4a843]">✓</span>

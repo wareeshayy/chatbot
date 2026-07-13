@@ -35,7 +35,7 @@ class RAGService:
     ) -> RAGResult:
         start = time.perf_counter()
 
-        if await self._is_index_empty() and not settings.gemini_api_key:
+        if await self._is_index_empty() and not self._has_llm():
             faq = faq_fallback(query)
             if faq:
                 answer, faq_citations = faq
@@ -50,19 +50,29 @@ class RAGService:
 
         citations = await self._retrieve(query)
 
-        if not citations:
-            if not settings.gemini_api_key and not settings.openai_api_key:
-                faq = faq_fallback(query)
-                if faq:
-                    answer, faq_citations = faq
-                    latency_ms = int((time.perf_counter() - start) * 1000)
-                    return RAGResult(
-                        answer=answer,
-                        citations=faq_citations,
-                        retrieved_chunk_ids=[],
-                        model_used="faq-fallback",
-                        latency_ms=latency_ms,
-                    )
+        # If no LLM is configured at all, use FAQ fallback
+        if not self._has_llm():
+            faq = faq_fallback(query)
+            if faq:
+                answer, faq_citations = faq
+                latency_ms = int((time.perf_counter() - start) * 1000)
+                return RAGResult(
+                    answer=answer,
+                    citations=faq_citations,
+                    retrieved_chunk_ids=[],
+                    model_used="faq-fallback",
+                    latency_ms=latency_ms,
+                )
+            # Retrieval-only mode — return raw context
+            context = self._format_context(citations)
+            latency_ms = int((time.perf_counter() - start) * 1000)
+            return RAGResult(
+                answer=_fallback_text(context),
+                citations=citations,
+                retrieved_chunk_ids=[c.chunk_id for c in citations if c.chunk_id],
+                model_used="retrieval-only",
+                latency_ms=latency_ms,
+            )
 
         history_text = ""
         if conversation_history:
@@ -71,9 +81,30 @@ class RAGService:
             )
 
         context = self._format_context(citations)
-        answer = generate_answer(context, history_text, query)
 
-        if settings.llm_provider == "openrouter" and settings.openrouter_api_key:
+        # Always call the LLM — even with empty context it can answer generic queries
+        try:
+            answer = generate_answer(context, history_text, query)
+        except Exception as exc:
+            logger.error("LLM generation failed: %s", exc)
+            answer = ""
+
+        # Last-resort fallback if LLM returned empty
+        if not answer or not answer.strip():
+            faq = faq_fallback(query)
+            if faq:
+                answer, citations = faq[0], faq[1]
+            elif citations:
+                answer = _fallback_text(context)
+            else:
+                answer = (
+                    "I'm sorry, I couldn't generate a response right now. "
+                    "Please try again or contact editor-in-chief@ijaike.org for assistance."
+                )
+
+        if settings.llm_provider == "groq" and settings.groq_api_key:
+            model = settings.groq_model
+        elif settings.llm_provider == "openrouter" and settings.openrouter_api_key:
             model = settings.openrouter_model
         elif settings.llm_provider == "openai" and settings.openai_api_key:
             model = settings.openai_model
@@ -91,6 +122,16 @@ class RAGService:
             latency_ms=latency_ms,
         )
 
+    def _has_llm(self) -> bool:
+        """Returns True if any LLM provider is configured."""
+        return bool(
+            (settings.llm_provider == "groq" and settings.groq_api_key)
+            or (settings.llm_provider == "gemini" and settings.gemini_api_key)
+            or (settings.llm_provider == "openai" and settings.openai_api_key)
+            or (settings.llm_provider == "openrouter" and settings.openrouter_api_key)
+            or (settings.llm_provider == "azure" and settings.azure_openai_api_key)
+        )
+
     async def _is_index_empty(self) -> bool:
         try:
             return await self.chroma.count() == 0
@@ -99,7 +140,7 @@ class RAGService:
 
     async def _retrieve(self, query: str, top_k: int | None = None) -> list[CitationSchema]:
         k = top_k or settings.rag_top_k
-        if not settings.gemini_api_key:
+        if not self._has_llm() and not settings.gemini_api_key:
             try:
                 count = await self.chroma.count()
                 if count == 0:

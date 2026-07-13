@@ -626,9 +626,7 @@ export function ChatPanel() {
             {messages.length === 0 ? (
               <div className="text-center pt-8 pb-4">
                 {/* JAIKE Logo */}
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border-4 border-[#d4a843]/80 text-2xl font-bold text-[#d4a843] mb-4 bg-[#d4a843]/5">
-                  J
-                </div>
+                <img src="/journal_logo.png" alt="JAIKE Logo" className="mx-auto h-14 w-14 object-contain rounded-sm bg-white p-0.5 mb-4" />
                 <h1 className="text-2xl font-medium text-white mb-2">
                   What can I help you with?
                 </h1>

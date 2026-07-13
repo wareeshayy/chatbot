@@ -269,7 +269,7 @@
           "content": [
             {
               "type": "paragraph",
-              "text": "Eligible manuscripts undergo a double-blind peer review by at least two independent reviewers. The process typically takes 4–8 weeks. Reviewers evaluate the manuscript based on scientific merit, clarity, methodology, long-term reference value, content quality, and contribution to the advancement in the field of AI and Knowledge Engineering."
+              "text": "Eligible manuscripts undergo a double-blind peer review by at least two independent reviewers. The process typically takes 2–4 weeks. Reviewers evaluate the manuscript based on scientific merit, clarity, methodology, long-term reference value, content quality, and contribution to the advancement in the field of AI and Knowledge Engineering."
             }
           ]
         },
@@ -760,7 +760,7 @@
             },
             {
               "type": "paragraph",
-              "text": "Each year, we set the text and illustration rates at the start of the year to partially offset the JAIKE Journal's management and publication expenses. For the first four inaugural issues, the article processing charge for both text and illustration pages is a flat $99 per page. Color images and figures are billed at twice the black-and-white rate."
+              "text": "Each year, we set the text and illustration rates at the start of the year to partially offset the JAIKE Journal's management and publication expenses. For the first four inaugural issues, the article processing charge for both text and illustration pages is a flat $49 per page."
             }
           ]
         },
@@ -847,24 +847,24 @@
           ]
         },
         {
-          "section_title": "Limited-Time 50% APC Discount for IJAIKE Journal Submissions",
+          "section_title": "Limited-Time 50% APC Discount for JAIKE Journal Submissions",
           "content": [
             {
               "type": "paragraph",
-              "text": "As part of our commitment to advancing global AI scholarship, the International Journal of Artificial Intelligence and Knowledge Engineering (IJAIKE) is pleased to offer a 50% discount on Article Processing Charges (APC) for all papers submitted by December 30, 2025."
+              "text": "As part of our commitment to advancing global AI scholarship, the International Journal of Artificial Intelligence and Knowledge Engineering (JAIKE) is pleased to offer a 50% discount on Article Processing Charges (APC) for all papers submitted by December 30, 2026."
             },
             {
               "type": "subsection",
               "title": "How to Apply",
               "steps": [
-                "Prepare your manuscript according to the IJAIKE author guidelines.",
-                "Submit your paper via our online portal by December 30, 2025.",
+                "Prepare your manuscript according to the JAIKE author guidelines.",
+                "Submit your paper via our online portal by December 30, 2026.",
                 "Enjoy the automatic APC reduction upon acceptance."
               ]
             },
             {
               "type": "deadline",
-              "text": "Deadline: December 30, 2025"
+              "text": "Deadline: December 30, 2026"
             }
           ]
         }

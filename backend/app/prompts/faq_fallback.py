@@ -8,16 +8,15 @@ FAQ_ENTRIES: list[dict] = [
         "answer": """**IJAIKE Article Processing Charges (APC)**
 
 • **No fees** for initial submission or peer review — APC applies only after acceptance.
-• **Inaugural issues:** $99/page (text and illustration pages); color figures at 2× B&W rate.
+• **Inaugural issues:** $49/page (text and illustration pages).
 • **Formula:** APC = (formatted text pages × rate) + (figures/tables × illustration rate).
 • **Package reference rates:**
   - Standard article (20 pages): **$1,000**
   - Short paper (15 pages): **$750**
   - Review article (30 pages): **$1,500**
   - Long paper (40 pages): **$2,000**
-  - Special issue paper: **$800**
   - Per-page rate (accepted manuscripts): **$49/page**
-• **50% discount** for papers submitted by December 30, 2025.
+• **50% discount** for papers submitted by December 30, 2026.
 • **Waivers** for low-income economies, Ph.D. candidates without funding, and exceptional-impact papers — email Editor-in-Chief@ijaike.com.
 
 Use the **APC Estimator** on this site for a personalized estimate, or visit https://ijaike.org/article-processing-charges-apc/""",
@@ -32,7 +31,7 @@ Use the **APC Estimator** on this site for a personalized estimate, or visit htt
 3. Use subject line: **"IJAIKE Submission – [Paper Title]"**
 4. Include: title, abstract (250–350 words), keywords (7–9), main text, references, author info.
 
-Acknowledgment email within 3–7 business days. Double-blind peer review typically takes 4–8 weeks.""",
+Acknowledgment email within 3–7 business days. Double-blind peer review typically takes 2–4 weeks.""",
         "source": "IJAIKE — Submission Procedure",
     },
     {
@@ -55,7 +54,7 @@ Acknowledgment email within 3–7 business days. Double-blind peer review typica
 
 • **Double-blind** review — author and reviewer identities are concealed.
 • At least **two independent reviewers** evaluate each manuscript.
-• Timeline: typically **4–8 weeks** for peer review; editorial decision within **4–6 weeks**.
+• Timeline: typically **2–4 weeks** for peer review; editorial decision within **4–6 weeks**.
 • Possible decisions: Accept, Minor Revision, Major Revision, Reject.
 • Reviewer reports are shared with authors in anonymized form.""",
         "source": "IJAIKE — Reviewer Anonymity Policy",
@@ -64,10 +63,9 @@ Acknowledgment email within 3–7 business days. Double-blind peer review typica
         "keywords": ["discount", "waiver", "special issue"],
         "answer": """**APC discounts and waivers**
 
-• **50% APC discount** for early submissions (deadline: December 30, 2025)
+• **50% APC discount** for early submissions (deadline: December 30, 2026)
 • **50% waiver** for Ph.D. candidates without research grants
 • **30% discount** for institutional partners
-• **Special issue papers:** $800 package rate
 • Request waivers at submission via **Editor-in-Chief@ijaike.com** with eligibility explanation.""",
         "source": "IJAIKE — APC Policy",
     },

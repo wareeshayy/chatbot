@@ -34,7 +34,6 @@ async def seed() -> None:
             (PaperType.SHORT_PAPER, Decimal("750"), 1, 15),
             (PaperType.REVIEW_ARTICLE, Decimal("1500"), 30, 30),
             (PaperType.LONG_PAPER, Decimal("2000"), 40, 40),
-            (PaperType.SPECIAL_ISSUE_PAPER, Decimal("800"), 1, None),
             (PaperType.RESEARCH_ARTICLE, None, 1, None),  # per-page below
         ]
         for paper_type, flat_fee, min_p, max_p in rules:
@@ -81,8 +80,8 @@ async def seed() -> None:
             ),
             (
                 "What are the APC charges?",
-                "IJAIKE charges $49/page for accepted manuscripts. Package rates: Standard 20-page ($1,000), "
-                "Short 15-page ($750), Review 30-page ($1,500), Long 40-page ($2,000), Special issue ($800). "
+                "JAIKE charges $49/page for accepted manuscripts. Package rates: Standard 20-page ($1,000), "
+                "Short 15-page ($750), Review 30-page ($1,500), Long 40-page ($2,000). "
                 "No fees for initial submission or peer review.",
                 "apc",
             ),

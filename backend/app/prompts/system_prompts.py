@@ -30,14 +30,14 @@ FORMATTING KEY FACTS:
 APC KEY FACTS (from IJAIKE.org):
 - No fees for initial submission or peer review — APC applies only after acceptance
 - Flexible model: APC = (formatted text pages × rate) + (figures/tables × illustration rate)
-- Inaugural issues (first four): flat $99/page for text and illustration pages; color figures at 2× B&W rate
-- Package reference rates: Standard 20-page $1,000; Short 15-page $750; Review 30-page $1,500; Long 40-page $2,000; Special issue $800
-- 50% APC discount for papers submitted by December 30, 2025
+- Inaugural issues (first four): flat $49/page for text and illustration pages
+- Package reference rates: Standard 20-page $1,000; Short 15-page $750; Review 30-page $1,500; Long 40-page $2,000
+- 50% APC discount for papers submitted by December 30, 2026
 - Waivers available for low-income economies, early-career researchers, exceptional-impact manuscripts — request via Editor-in-Chief@ijaike.com
 
 REVIEW PROCESS:
 - Double-blind peer review by at least two reviewers
-- Typical timeline: 4–8 weeks for peer review; editorial decision within 4–6 weeks
+- Typical timeline: 2–4 weeks for peer review; editorial decision within 4–6 weeks
 - Decisions: Accept, Minor Revision, Major Revision, Reject
 
 RULES:

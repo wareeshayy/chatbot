@@ -17,9 +17,9 @@ export function Header() {
   return (
     <header className="bg-[#0a1628] text-white">
       <div className="border-b border-white/10">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2 text-xs text-white/70">
-          <span>International Journal of Artificial Intelligence &amp; Knowledge Engineering</span>
-          <a href="https://ijaike.org" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4a843]">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 px-4 py-2 text-xs text-white/70">
+          <span className="text-[20px] font-semibold text-white tracking-wide leading-tight">International Journal of Artificial Intelligence &amp; Knowledge Engineering</span>
+          <a href="https://ijaike.org" target="_blank" rel="noopener noreferrer" className="hover:text-[#d4a843] shrink-0">
             ijaike.org
           </a>
         </div>
@@ -27,9 +27,7 @@ export function Header() {
 
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#d4a843] text-lg font-bold text-[#d4a843]">
-            J
-          </div>
+          <img src="/journal_logo.png" alt="JAIKE Logo" className="h-11 w-11 object-contain rounded-sm bg-white p-0.5" />
           <div>
             <p className="text-lg font-semibold tracking-wide">JAIKE</p>
             <p className="hidden text-xs text-white/60 sm:block">Publishing Tomorrow&apos;s Intelligence Today</p>

@@ -9,7 +9,6 @@ const PAPER_TYPES = [
   { value: "short_paper", label: "Short Paper (≤15 pages — $750)" },
   { value: "review_article", label: "Review Article (30 pages — $1,500)" },
   { value: "long_paper", label: "Long Paper (40 pages — $2,000)" },
-  { value: "special_issue_paper", label: "Special Issue Paper ($800)" },
   { value: "research_article", label: "Research Article ($49/page)" },
 ];
 

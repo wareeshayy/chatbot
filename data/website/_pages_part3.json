@@ -550,7 +550,7 @@
           },
           {
             "type": "paragraph",
-            "text": "Each year, we set the text and illustration rates at the start of the year to partially offset the JAIKE Journal's management and publication expenses. For the first four inaugural issues, the article processing charge for both text and illustration pages is a flat $99 per page. Color images and figures are billed at twice the black-and-white rate."
+            "text": "Each year, we set the text and illustration rates at the start of the year to partially offset the JAIKE Journal's management and publication expenses. For the first four inaugural issues, the article processing charge for both text and illustration pages is a flat $49 per page."
           }
         ]
       },
@@ -638,23 +638,23 @@
       },
       {
         "section_title": "Limited-Time 50% APC Discount",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "As part of our commitment to advancing global AI scholarship, the International Journal of Artificial Intelligence and Knowledge Engineering (IJAIKE) is pleased to offer a 50% discount on Article Processing Charges (APC) for all papers submitted by December 30, 2025."
-          },
-          {
-            "type": "steps",
-            "items": [
-              "Prepare your manuscript according to the IJAIKE author guidelines.",
-              "Submit your paper via our online portal by December 30, 2025.",
-              "Enjoy the automatic APC reduction upon acceptance."
-            ]
-          },
-          {
-            "type": "deadline",
-            "text": "Deadline: December 30, 2025"
-          }
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "As part of our commitment to advancing global AI scholarship, the International Journal of Artificial Intelligence and Knowledge Engineering (JAIKE) is pleased to offer a 50% discount on Article Processing Charges (APC) for all papers submitted by December 30, 2026."
+            },
+            {
+              "type": "steps",
+              "items": [
+                "Prepare your manuscript according to the JAIKE author guidelines.",
+                "Submit your paper via our online portal by December 30, 2026.",
+                "Enjoy the automatic APC reduction upon acceptance."
+              ]
+            },
+            {
+              "type": "deadline",
+              "text": "Deadline: December 30, 2026"
+            }
         ]
       }
     ]

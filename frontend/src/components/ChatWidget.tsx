@@ -379,9 +379,7 @@ export function ChatWidget() {
           <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-slate-50 relative select-text">
             {messages.length === 0 ? (
               <div className="text-center pt-8 pb-4">
-                <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border-2 border-[#d4a843] text-lg font-bold text-[#d4a843] mb-3 bg-[#d4a843]/5">
-                  J
-                </div>
+                <img src="/journal_logo.png" alt="JAIKE Logo" className="mx-auto h-11 w-11 object-contain rounded-sm bg-white p-0.5 mb-3" />
                 <h3 className="font-semibold text-slate-800 text-sm mb-1">Ask about IJAIKE</h3>
                 <p className="text-xs text-slate-500 max-w-xs mx-auto mb-4.5 px-3">
                   I can help you with submissions, APC fees, formatting guidelines, peer review, and special issues.

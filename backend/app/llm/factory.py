@@ -1,4 +1,4 @@
-"""LLM factory — Gemini (dev), OpenAI/Azure (production)."""
+"""LLM factory — Gemini (dev), OpenAI/Azure, OpenRouter, Groq (production)."""
 
 from app.config.settings import get_settings
 from app.prompts.system_prompts import IJAIKE_SYSTEM_PROMPT
@@ -33,6 +33,8 @@ INSTRUCTIONS FOR ANSWERING:
         return _generate_openai(prompt)
     if settings.llm_provider == "openrouter" and settings.openrouter_api_key:
         return _generate_openrouter(prompt)
+    if settings.llm_provider == "groq" and settings.groq_api_key:
+        return _generate_groq(prompt)
     # Fallback: return context-based summary without LLM
     return _fallback_answer(system_context, user_query)
 
@@ -92,3 +94,17 @@ def _generate_openrouter(prompt: str) -> str:
         },
     )
     return response.choices[0].message.content.strip()
+
+
+def _generate_groq(prompt: str) -> str:
+    from groq import Groq
+
+    client = Groq(api_key=settings.groq_api_key)
+    response = client.chat.completions.create(
+        model=settings.groq_model or "llama-3.3-70b-versatile",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.2,
+        max_tokens=4096,
+    )
+    content = response.choices[0].message.content
+    return content.strip() if content else ""
