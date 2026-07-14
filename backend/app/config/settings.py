@@ -32,8 +32,8 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 15
     refresh_token_expire_days: int = 7
 
-    # LLM provider: gemini (dev), openai, azure (production), openrouter
-    llm_provider: Literal["gemini", "openai", "azure", "openrouter", "groq"] = "gemini"
+    # LLM provider: gemini (dev), openai, azure (production), openrouter, groq
+    llm_provider: Literal["gemini", "openai", "azure", "openrouter", "groq"] = "groq"
     gemini_api_key: str = ""
     gemini_model: str = "gemini-2.0-flash"
     gemini_embedding_model: str = "models/text-embedding-004"
