@@ -27,6 +27,8 @@ class RAGResult:
 class RAGService:
     def __init__(self) -> None:
         self.chroma = ChromaStore.get_instance()
+        from app.services.agent_service import AgentService
+        self.agent_service = AgentService(self)
 
     async def retrieve_and_generate(
         self,
@@ -34,6 +36,16 @@ class RAGService:
         conversation_history: list[dict] | None = None,
     ) -> RAGResult:
         start = time.perf_counter()
+
+        if self._has_llm():
+            res = await self.agent_service.execute_agent_loop(query, conversation_history)
+            return RAGResult(
+                answer=res["answer"],
+                citations=res["citations"],
+                retrieved_chunk_ids=res["retrieved_chunk_ids"],
+                model_used=res["model_used"],
+                latency_ms=res["latency_ms"],
+            )
 
         if await self._is_index_empty() and not self._has_llm():
             faq = faq_fallback(query)

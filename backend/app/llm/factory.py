@@ -108,3 +108,15 @@ def _generate_groq(prompt: str) -> str:
     )
     content = response.choices[0].message.content
     return content.strip() if content else ""
+
+
+def raw_llm_completion(prompt: str) -> str:
+    if settings.llm_provider == "gemini" and settings.gemini_api_key:
+        return _generate_gemini(prompt)
+    if settings.llm_provider == "openai" and settings.openai_api_key:
+        return _generate_openai(prompt)
+    if settings.llm_provider == "openrouter" and settings.openrouter_api_key:
+        return _generate_openrouter(prompt)
+    if settings.llm_provider == "groq" and settings.groq_api_key:
+        return _generate_groq(prompt)
+    return ""
