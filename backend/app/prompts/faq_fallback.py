@@ -4,6 +4,18 @@ from app.schemas.common import CitationSchema
 
 FAQ_ENTRIES: list[dict] = [
     {
+        "keywords": ["hi", "hello", "hey", "greetings", "assalamualaikum", "good morning", "good afternoon"],
+        "answer": """**Welcome to the JAIKE Journal Assistant!** 👋
+
+I am here to help you with:
+• Submission procedures & template formatting
+• Article Processing Charges (APC) & discounts
+• Peer review duration & reviewer policy
+
+*Note: I am currently running in offline fallback mode. Configure `GROK_API_KEY` (or `GROQ_API_KEY`) on your Vercel Dashboard to enable full conversational AI agent mode.*""",
+        "source": "JAIKE Assistant Guide",
+    },
+    {
         "keywords": ["apc", "charge", "fee", "processing", "cost", "price", "payment"],
         "answer": """**IJAIKE Article Processing Charges (APC)**
 
