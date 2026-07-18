@@ -35,6 +35,8 @@ INSTRUCTIONS FOR ANSWERING:
         return _generate_openrouter(prompt)
     if settings.llm_provider == "groq" and settings.groq_api_key:
         return _generate_groq(prompt)
+    if settings.llm_provider == "grok" and settings.grok_api_key:
+        return _generate_grok(prompt)
     # Fallback: return context-based summary without LLM
     return _fallback_answer(system_context, user_query)
 
@@ -110,6 +112,23 @@ def _generate_groq(prompt: str) -> str:
     return content.strip() if content else ""
 
 
+def _generate_grok(prompt: str) -> str:
+    from openai import OpenAI
+
+    client = OpenAI(
+        api_key=settings.grok_api_key,
+        base_url="https://api.xai.com/v1",
+    )
+    response = client.chat.completions.create(
+        model=settings.grok_model or "grok-2",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.2,
+        max_tokens=4096,
+    )
+    content = response.choices[0].message.content
+    return content.strip() if content else ""
+
+
 def raw_llm_completion(prompt: str) -> str:
     if settings.llm_provider == "gemini" and settings.gemini_api_key:
         return _generate_gemini(prompt)
@@ -119,4 +138,6 @@ def raw_llm_completion(prompt: str) -> str:
         return _generate_openrouter(prompt)
     if settings.llm_provider == "groq" and settings.groq_api_key:
         return _generate_groq(prompt)
+    if settings.llm_provider == "grok" and settings.grok_api_key:
+        return _generate_grok(prompt)
     return ""

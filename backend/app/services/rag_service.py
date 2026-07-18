@@ -114,7 +114,9 @@ class RAGService:
                     "Please try again or contact editor-in-chief@ijaike.org for assistance."
                 )
 
-        if settings.llm_provider == "groq" and settings.groq_api_key:
+        if settings.llm_provider == "grok" and settings.grok_api_key:
+            model = settings.grok_model
+        elif settings.llm_provider == "groq" and settings.groq_api_key:
             model = settings.groq_model
         elif settings.llm_provider == "openrouter" and settings.openrouter_api_key:
             model = settings.openrouter_model
@@ -138,6 +140,7 @@ class RAGService:
         """Returns True if any LLM provider is configured."""
         return bool(
             (settings.llm_provider == "groq" and settings.groq_api_key)
+            or (settings.llm_provider == "grok" and settings.grok_api_key)
             or (settings.llm_provider == "gemini" and settings.gemini_api_key)
             or (settings.llm_provider == "openai" and settings.openai_api_key)
             or (settings.llm_provider == "openrouter" and settings.openrouter_api_key)

@@ -32,8 +32,8 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 15
     refresh_token_expire_days: int = 7
 
-    # LLM provider: gemini (dev), openai, azure (production), openrouter, groq
-    llm_provider: Literal["gemini", "openai", "azure", "openrouter", "groq"] = "groq"
+    # LLM provider: gemini (dev), openai, azure (production), openrouter, groq, grok
+    llm_provider: Literal["gemini", "openai", "azure", "openrouter", "groq", "grok"] = "grok"
     gemini_api_key: str = ""
     gemini_model: str = "gemini-2.0-flash"
     gemini_embedding_model: str = "models/text-embedding-004"
@@ -49,6 +49,10 @@ class Settings(BaseSettings):
     # Groq
     groq_api_key: str = ""
     groq_model: str = "llama-3.3-70b-versatile"
+
+    # Grok
+    grok_api_key: str = ""
+    grok_model: str = "grok-2"
 
     # Azure OpenAI (production)
     azure_openai_endpoint: str = ""
