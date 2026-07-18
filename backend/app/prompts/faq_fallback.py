@@ -12,7 +12,7 @@ I am here to help you with:
 • Article Processing Charges (APC) & discounts
 • Peer review duration & reviewer policy
 
-*Note: I am currently running in offline fallback mode. Configure `GROK_API_KEY` (or `GROQ_API_KEY`) on your Vercel Dashboard to enable full conversational AI agent mode.*""",
+Please ask a question about JAIKE, or select one of the suggested topics below to begin!""",
         "source": "JAIKE Assistant Guide",
     },
     {
