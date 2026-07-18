@@ -209,3 +209,15 @@ class RAGService:
             header += "]"
             parts.append(f"{header}\n{cite.excerpt}")
         return "\n\n".join(parts)
+
+
+def _fallback_text(context: str) -> str:
+    if not context.strip():
+        return (
+            "I don't have specific information about that in the JAIKE knowledge base yet. "
+            "Please contact the editorial office at editor-in-chief@ijaike.org or visit https://ijaike.org."
+        )
+    return (
+        "Based on the JAIKE knowledge base (retrieval-only mode):\n\n"
+        + context
+    )
