@@ -34,7 +34,7 @@ class Settings(BaseSettings):
     refresh_token_expire_days: int = 7
 
     # LLM provider: gemini (dev), openai, azure (production), openrouter, groq, grok
-    llm_provider: Literal["gemini", "openai", "azure", "openrouter", "groq", "grok"] = "grok"
+    llm_provider: Literal["gemini", "openai", "azure", "openrouter", "groq", "grok"] = "groq"
     gemini_api_key: str = ""
     gemini_model: str = "gemini-2.0-flash"
     gemini_embedding_model: str = "models/text-embedding-004"
