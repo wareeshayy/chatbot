@@ -114,19 +114,22 @@ def _generate_groq(prompt: str) -> str:
 
 def _generate_grok(prompt: str) -> str:
     from openai import OpenAI
-
-    client = OpenAI(
-        api_key=settings.grok_api_key,
-        base_url="https://api.xai.com/v1",
-    )
-    response = client.chat.completions.create(
-        model=settings.grok_model or "grok-2",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.2,
-        max_tokens=4096,
-    )
-    content = response.choices[0].message.content
-    return content.strip() if content else ""
+    try:
+        client = OpenAI(
+            api_key=settings.grok_api_key,
+            base_url="https://api.xai.com/v1",
+        )
+        response = client.chat.completions.create(
+            model=settings.grok_model or "grok-2",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.2,
+            max_tokens=4096,
+        )
+        content = response.choices[0].message.content
+        return content.strip() if content else ""
+    except Exception as e:
+        logger.error("Grok API call failed: %s", e)
+        raise e
 
 
 def raw_llm_completion(prompt: str) -> str:
