@@ -37,7 +37,7 @@ class Settings(BaseSettings):
     llm_provider: Literal["gemini", "openai", "azure", "openrouter", "groq", "grok"] = "groq"
     gemini_api_key: str = ""
     gemini_model: str = "gemini-2.0-flash"
-    gemini_embedding_model: str = "models/text-embedding-004"
+    gemini_embedding_model: str = "models/gemini-embedding-2"
 
     openai_api_key: str = ""
     openai_model: str = "gpt-4o-mini"
