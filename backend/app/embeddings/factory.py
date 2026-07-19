@@ -10,8 +10,21 @@ _local_model = None
 
 
 def embed_texts(texts: list[str], *, task_type: str = "retrieval_document") -> list[list[float]]:
-    # Force local sentence_transformer embeddings to match the deployed database dimensionality (384)
+    if settings.embedding_provider == "gemini" and settings.gemini_api_key:
+        return _embed_gemini(texts, task_type=task_type)
+    if settings.embedding_provider == "openai" and settings.openai_api_key:
+        return _embed_openai(texts)
     return _embed_local(texts)
+
+
+def _embed_openai(texts: list[str]) -> list[list[float]]:
+    from openai import OpenAI
+    client = OpenAI(api_key=settings.openai_api_key)
+    response = client.embeddings.create(
+        input=texts,
+        model=settings.embedding_model or "text-embedding-3-small"
+    )
+    return [data.embedding for data in response.data]
 
 
 def embed_query(text: str) -> list[float]:
