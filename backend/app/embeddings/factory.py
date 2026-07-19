@@ -10,8 +10,7 @@ _local_model = None
 
 
 def embed_texts(texts: list[str], *, task_type: str = "retrieval_document") -> list[list[float]]:
-    if settings.embedding_provider == "gemini" and settings.gemini_api_key:
-        return _embed_gemini(texts, task_type=task_type)
+    # Force local sentence_transformer embeddings to match the deployed database dimensionality (384)
     return _embed_local(texts)
 
 

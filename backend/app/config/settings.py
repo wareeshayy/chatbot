@@ -4,7 +4,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Literal
 
-from pydantic import Field, field_validator
+from pydantic import Field, field_validator, AliasChoices
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -52,7 +52,7 @@ class Settings(BaseSettings):
     groq_model: str = "llama-3.3-70b-versatile"
 
     # Grok
-    grok_api_key: str = ""
+    grok_api_key: str = Field(default="", validation_alias=AliasChoices("grok_api_key", "xai_api_key"))
     grok_model: str = "grok-2"
 
     # Azure OpenAI (production)
