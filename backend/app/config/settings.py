@@ -79,7 +79,7 @@ class Settings(BaseSettings):
 
     # RAG
     rag_top_k: int = 5
-    rag_score_threshold: float = 0.7
+    rag_score_threshold: float = 0.3
     chunk_size: int = 1000
     chunk_overlap: int = 200
 
