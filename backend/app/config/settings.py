@@ -1,6 +1,7 @@
 """Application configuration loaded from environment variables."""
 
 from functools import lru_cache
+from pathlib import Path
 from typing import Literal
 
 from pydantic import Field, field_validator
@@ -69,7 +70,7 @@ class Settings(BaseSettings):
     vector_store: Literal["chroma", "mongodb"] = "chroma"
 
     # ChromaDB
-    chroma_persist_dir: str = "./data/chroma"
+    chroma_persist_dir: str = str(Path(__file__).resolve().parents[2] / "data" / "chroma")
     chroma_collection_name: str = "ijaike_kb"
 
     # Storage
