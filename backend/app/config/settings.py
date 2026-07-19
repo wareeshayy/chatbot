@@ -62,7 +62,7 @@ class Settings(BaseSettings):
     azure_openai_api_version: str = "2024-02-15-preview"
 
     # Embeddings fallback
-    embedding_provider: Literal["gemini", "openai", "sentence_transformer"] = "gemini"
+    embedding_provider: Literal["gemini", "openai", "sentence_transformer"] = "sentence_transformer"
     sentence_transformer_model: str = "all-MiniLM-L6-v2"
 
     # Vector store: chroma (local) or mongodb (Atlas Vector Search for production)
