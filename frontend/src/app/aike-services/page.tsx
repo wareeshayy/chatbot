@@ -102,11 +102,11 @@ export default function AIKEServicesPage() {
           </div>
         </section>
 
-        {/* Upload Widget Section */}
+        {/* Supporting Document Section */}
         <section className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
-          <h3 className="text-lg font-bold text-[#0a1628]">Document Management &amp; File Upload</h3>
+          <h3 className="text-lg font-bold text-[#0a1628]">Supporting Document</h3>
           <p className="text-xs text-slate-500 mt-1">
-            Need to upload a revised PDF version or upload a new service proposal? Use the document uploader below:
+            Download the AIKE Business Services overview document below.
           </p>
           <DocumentViewerUploader
             documentTitle="AIKE Business Services Overview Document"
