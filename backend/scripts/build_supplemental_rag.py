@@ -5,6 +5,7 @@ import json
 import os
 import urllib.parse
 import urllib.request
+import time
 from pathlib import Path
 
 from pypdf import PdfReader
@@ -20,6 +21,10 @@ SOURCES = (
     (
         PROJECT_ROOT / "data" / "pdfs" / "Custom_AI_Powered_Web_Applications_and_Full_Stack_Software_Development.pdf",
         "Custom AI-Powered Web Applications & Full-Stack Software Development",
+    ),
+    (
+        PROJECT_ROOT / "data" / "services" / "Custom_AI_Powered_Web_Applications_and_Full_Stack_Software_Development_Transcript.txt",
+        "Custom AI-Powered Web Applications & Full-Stack Software Development - Text Transcript",
     ),
 )
 CHUNK_SIZE = 1000
@@ -42,7 +47,17 @@ def source_pages(path: Path) -> list[tuple[int, str]]:
     if path.suffix.lower() == ".pdf":
         reader = PdfReader(str(path))
         return [(number, (page.extract_text() or "").strip()) for number, page in enumerate(reader.pages, 1)]
-    return [(1, path.read_text(encoding="utf-8").strip())]
+    text = path.read_text(encoding="utf-8").strip()
+    for broken, corrected in {
+        "â€™": "'",
+        "â€œ": '"',
+        "â€": '"',
+        "â€”": "-",
+        "â€“": "-",
+        "â€¢": "-",
+    }.items():
+        text = text.replace(broken, corrected)
+    return [(1, text)]
 
 
 def chunks_for(path: Path, title: str) -> list[dict]:
@@ -87,6 +102,14 @@ def embed(text: str, api_key: str, model: str) -> list[float]:
         return json.load(response)["embedding"]["values"]
 
 
+def write_index(chunks: list[dict], model: str) -> None:
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT_PATH.write_text(
+        json.dumps({"embedding_model": model, "chunk_size": CHUNK_SIZE, "chunk_overlap": CHUNK_OVERLAP, "chunks": chunks}),
+        encoding="utf-8",
+    )
+
+
 def main() -> None:
     load_local_env()
     api_key = os.environ.get("GEMINI_API_KEY", "")
@@ -94,16 +117,34 @@ def main() -> None:
     if not api_key:
         raise RuntimeError("GEMINI_API_KEY is required to build the supplemental RAG index")
 
+    existing_embeddings = {}
+    if OUTPUT_PATH.exists():
+        existing_payload = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+        existing_embeddings = {
+            chunk["id"]: chunk.get("embedding")
+            for chunk in existing_payload.get("chunks", [])
+            if chunk.get("embedding")
+        }
+
     chunks = [chunk for path, title in SOURCES for chunk in chunks_for(path, title)]
     for number, chunk in enumerate(chunks, 1):
-        chunk["embedding"] = embed(chunk["content"], api_key, model)
-        print(f"Embedded {number}/{len(chunks)}: {chunk['source_file']} page {chunk['page_number']}")
+        if chunk["id"] in existing_embeddings:
+            chunk["embedding"] = existing_embeddings[chunk["id"]]
+            print(f"Reused {number}/{len(chunks)}: {chunk['source_file']} page {chunk['page_number']}")
+            continue
 
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_PATH.write_text(
-        json.dumps({"embedding_model": model, "chunk_size": CHUNK_SIZE, "chunk_overlap": CHUNK_OVERLAP, "chunks": chunks}),
-        encoding="utf-8",
-    )
+        for attempt in range(1, 4):
+            try:
+                chunk["embedding"] = embed(chunk["content"], api_key, model)
+                print(f"Embedded {number}/{len(chunks)}: {chunk['source_file']} page {chunk['page_number']}")
+                write_index(chunks[:number], model)
+                break
+            except Exception:
+                if attempt == 3:
+                    raise
+                time.sleep(attempt * 2)
+
+    write_index(chunks, model)
     print(f"Wrote {len(chunks)} chunks to {OUTPUT_PATH}")
 
 
