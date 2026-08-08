@@ -24,6 +24,20 @@ Continuing now.'''
     assert action["tool_input"]["query"] == "IJAIKE font margins"
 
 
+def test_editor_profile_is_available_to_planner_and_writer() -> None:
+    service = AgentService(StubRAGService())
+    state = {
+        "query": "Who is Brian Prasad?",
+        "steps": [],
+        "retrieved_context": [],
+    }
+
+    planner_prompt = service._compile_agent_prompt(state, "No history")
+
+    assert "Dr. Biren (Brian) Prasad" in planner_prompt
+    assert "about-the-editor-in-chief-2" in planner_prompt
+
+
 @pytest.mark.asyncio
 async def test_malformed_planner_output_is_not_returned_to_user() -> None:
     service = AgentService(StubRAGService())

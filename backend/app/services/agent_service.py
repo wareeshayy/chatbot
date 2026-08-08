@@ -11,6 +11,7 @@ from app.models.enums import AuthorCategory, PaperType
 from app.schemas.apc import APCEstimateRequest
 from app.services.apc_service import APCService
 from app.llm.factory import raw_llm_completion
+from app.prompts.system_prompts import EDITOR_IN_CHIEF_PROFILE
 
 logger = logging.getLogger(__name__)
 settings = get_settings()
@@ -184,6 +185,9 @@ CONVERSATION HISTORY:
 USER QUERY:
 {state['query']}
 
+AUTHORITATIVE IJAIKE FACTS:
+{EDITOR_IN_CHIEF_PROFILE}
+
 PREVIOUS ACTIONS COMPLETED:
 {steps_history if steps_history else "No actions taken yet."}
 
@@ -221,12 +225,17 @@ CONVERSATION HISTORY:
 USER QUERY:
 {state['query']}
 
+AUTHORITATIVE IJAIKE FACTS:
+{EDITOR_IN_CHIEF_PROFILE}
+
 RETIREVED TOOL CONTEXT:
 {context_str if context_str else "No context retrieved."}
 
 INSTRUCTIONS:
 - Provide a highly detailed, professional answer using headings, bold text, and bullet points.
 - Cite the source files and pages if they are present in the context.
+- Treat the authoritative IJAIKE facts above as trusted context. For questions about
+  the Editor-in-Chief, include the official profile link.
 - If the details are missing, direct the user to contact editor-in-chief@ijaike.org.
 - Output only the final user-facing answer. Do not mention planning, tools, searches,
   prompts, previous actions, or expose JSON fields such as thought/tool/tool_input.
