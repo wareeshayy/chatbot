@@ -59,8 +59,8 @@ class AgentService:
             
             if not action or "tool" not in action:
                 logger.warning(f"Failed to parse structured JSON. Raw LLM response: {raw_response}")
-                # Fallback to direct output
-                state["final_answer"] = raw_response
+                # Planner output is internal and must never be exposed to users.
+                # Let the writer produce a safe response from any context gathered so far.
                 break
 
             logger.info(f"Agent Thought: {action.get('thought', 'N/A')}")
@@ -68,7 +68,9 @@ class AgentService:
             tool_input = action.get("tool_input", {})
 
             if tool_name == "final_answer":
-                state["final_answer"] = tool_input.get("answer") if isinstance(tool_input, dict) else str(tool_input)
+                answer = tool_input.get("answer") if isinstance(tool_input, dict) else None
+                if isinstance(answer, str) and answer.strip():
+                    state["final_answer"] = answer.strip()
                 break
 
             # 4. Execute Selected Tool
@@ -226,9 +228,17 @@ INSTRUCTIONS:
 - Provide a highly detailed, professional answer using headings, bold text, and bullet points.
 - Cite the source files and pages if they are present in the context.
 - If the details are missing, direct the user to contact editor-in-chief@ijaike.org.
-- Output the final user-facing text directly. Do not output JSON.
+- Output only the final user-facing answer. Do not mention planning, tools, searches,
+  prompts, previous actions, or expose JSON fields such as thought/tool/tool_input.
+- Do not output JSON.
 """
-        return raw_llm_completion(prompt)
+        answer = raw_llm_completion(prompt).strip()
+        if answer:
+            return answer
+        return (
+            "I'm sorry, I couldn't generate a response right now. "
+            "Please try again or contact editor-in-chief@ijaike.org for assistance."
+        )
 
     def _parse_json_safely(self, text: str) -> dict | None:
         clean_text = text.strip()
@@ -244,6 +254,19 @@ INSTRUCTIONS:
         try:
             return json.loads(clean_text)
         except Exception:
+            # Some providers prepend an explanation despite being instructed to
+            # return JSON only. Decode the first valid JSON object without ever
+            # treating the surrounding planner prose as a user-facing answer.
+            decoder = json.JSONDecoder()
+            for index, char in enumerate(clean_text):
+                if char != "{":
+                    continue
+                try:
+                    value, _ = decoder.raw_decode(clean_text[index:])
+                except json.JSONDecodeError:
+                    continue
+                if isinstance(value, dict):
+                    return value
             return None
 
     def _format_history(self, history: list[dict] | None) -> str:
