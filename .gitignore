@@ -28,7 +28,8 @@ htmlcov/
 
 # Data & uploads
 backend/uploads/
-backend/data/
+backend/data/*
+!backend/data/supplemental_rag.json
 *.db
 
 # Node (frontend — Phase 3)

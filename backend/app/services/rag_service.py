@@ -10,6 +10,7 @@ from app.llm.factory import generate_answer
 from app.prompts.faq_fallback import faq_fallback
 from app.schemas.common import CitationSchema
 from app.vectorstore.chroma_store import ChromaStore
+from app.vectorstore.supplemental_store import search_supplemental_index
 
 logger = get_logger(__name__)
 settings = get_settings()
@@ -165,13 +166,20 @@ class RAGService:
 
         try:
             query_embedding = embed_query(query)
-            results = await self.chroma.search(query_embedding, top_k=k)
         except Exception as exc:
-            logger.warning("Vector search failed, using empty context: %s", exc)
+            logger.warning("Query embedding failed, using empty context: %s", exc)
             return []
 
+        try:
+            results = await self.chroma.search(query_embedding, top_k=k)
+        except Exception as exc:
+            logger.warning("Primary vector search failed, using supplemental index: %s", exc)
+            results = {"ids": [[]], "documents": [[]], "metadatas": [[]], "distances": [[]], "embeddings": [[]]}
+
+        supplemental = search_supplemental_index(query_embedding, top_k=k)
+
         if not results or not results.get("ids") or not results["ids"][0]:
-            return []
+            results = {"ids": [[]], "documents": [[]], "metadatas": [[]], "distances": [[]], "embeddings": [[]]}
 
         citations: list[CitationSchema] = []
         for i, chunk_id in enumerate(results["ids"][0]):
@@ -196,7 +204,25 @@ class RAGService:
                     embedding=embedding_vals,
                 )
             )
-        return citations
+
+        for item in supplemental:
+            relevance = max(0.0, float(item["score"]))
+            if relevance < settings.rag_score_threshold:
+                continue
+            citations.append(
+                CitationSchema(
+                    document_title=item["document_title"],
+                    page_number=item.get("page_number"),
+                    section=item.get("section_title") or None,
+                    chunk_id=item["id"],
+                    relevance_score=round(relevance, 2),
+                    excerpt=item["content"][:300] + ("..." if len(item["content"]) > 300 else ""),
+                    embedding=item.get("embedding"),
+                )
+            )
+
+        citations.sort(key=lambda citation: citation.relevance_score, reverse=True)
+        return citations[:k]
 
     def _format_context(self, citations: list[CitationSchema]) -> str:
         if not citations:

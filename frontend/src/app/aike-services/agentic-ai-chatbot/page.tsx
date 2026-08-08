@@ -35,7 +35,7 @@ export default function AgenticAiChatbotPage() {
         <DocumentViewerUploader
           documentTitle="Agentic AI Solutions for Intelligent ChatBot Development"
           pdfFileName="Agentic_AI_Solutions_for_Intelligent_Chatbot_Development.pdf"
-          pdfUrl="/documents/Agentic_AI_Solutions_for_Intelligent_Chatbot_Development.txt"
+          pdfUrl="/documents/Agentic_AI_Solutions_for_Intelligent_Chatbot_Development.pdf"
         />
 
         {/* Introduction */}
