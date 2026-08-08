@@ -2,6 +2,7 @@
 
 import json
 import math
+import re
 from functools import lru_cache
 from pathlib import Path
 from typing import Any
@@ -35,6 +36,23 @@ def search_supplemental_index(query_embedding: list[float], top_k: int = 5) -> l
             continue
         score = sum(a * b for a, b in zip(query_embedding, embedding)) / (query_norm * embedding_norm)
         ranked.append((score, chunk))
+
+    ranked.sort(key=lambda item: item[0], reverse=True)
+    return [{**chunk, "score": score} for score, chunk in ranked[:top_k]]
+
+
+def search_supplemental_text(query: str, top_k: int = 5) -> list[dict[str, Any]]:
+    """Quota-safe lexical fallback over the same embedded document chunks."""
+    terms = {term for term in re.findall(r"[a-z0-9]+", query.lower()) if len(term) > 2}
+    if not terms:
+        return []
+
+    ranked: list[tuple[float, dict[str, Any]]] = []
+    for chunk in _load_index():
+        searchable = f"{chunk.get('document_title', '')} {chunk.get('content', '')}".lower()
+        matches = sum(1 for term in terms if term in searchable)
+        if matches:
+            ranked.append((matches / len(terms), chunk))
 
     ranked.sort(key=lambda item: item[0], reverse=True)
     return [{**chunk, "score": score} for score, chunk in ranked[:top_k]]

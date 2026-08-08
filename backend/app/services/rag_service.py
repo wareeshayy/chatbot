@@ -10,7 +10,7 @@ from app.llm.factory import generate_answer
 from app.prompts.faq_fallback import faq_fallback
 from app.schemas.common import CitationSchema
 from app.vectorstore.chroma_store import ChromaStore
-from app.vectorstore.supplemental_store import search_supplemental_index
+from app.vectorstore.supplemental_store import search_supplemental_index, search_supplemental_text
 
 logger = get_logger(__name__)
 settings = get_settings()
@@ -39,14 +39,17 @@ class RAGService:
         start = time.perf_counter()
 
         if self._has_llm():
-            res = await self.agent_service.execute_agent_loop(query, conversation_history)
-            return RAGResult(
-                answer=res["answer"],
-                citations=res["citations"],
-                retrieved_chunk_ids=res["retrieved_chunk_ids"],
-                model_used=res["model_used"],
-                latency_ms=res["latency_ms"],
-            )
+            try:
+                res = await self.agent_service.execute_agent_loop(query, conversation_history)
+                return RAGResult(
+                    answer=res["answer"],
+                    citations=res["citations"],
+                    retrieved_chunk_ids=res["retrieved_chunk_ids"],
+                    model_used=res["model_used"],
+                    latency_ms=res["latency_ms"],
+                )
+            except Exception as exc:
+                logger.warning("Agent generation failed; using resilient RAG fallback: %s", exc)
 
         if await self._is_index_empty() and not self._has_llm():
             faq = faq_fallback(query)
@@ -167,8 +170,8 @@ class RAGService:
         try:
             query_embedding = embed_query(query)
         except Exception as exc:
-            logger.warning("Query embedding failed, using empty context: %s", exc)
-            return []
+            logger.warning("Query embedding failed, using lexical supplemental search: %s", exc)
+            return self._supplemental_citations(search_supplemental_text(query, top_k=k), k)
 
         try:
             results = await self.chroma.search(query_embedding, top_k=k)
@@ -205,10 +208,15 @@ class RAGService:
                 )
             )
 
-        for item in supplemental:
+        citations.extend(self._supplemental_citations(supplemental, k))
+
+        citations.sort(key=lambda citation: citation.relevance_score, reverse=True)
+        return citations[:k]
+
+    def _supplemental_citations(self, items: list[dict], limit: int) -> list[CitationSchema]:
+        citations: list[CitationSchema] = []
+        for item in items:
             relevance = max(0.0, float(item["score"]))
-            if relevance < settings.rag_score_threshold:
-                continue
             citations.append(
                 CitationSchema(
                     document_title=item["document_title"],
@@ -220,9 +228,7 @@ class RAGService:
                     embedding=item.get("embedding"),
                 )
             )
-
-        citations.sort(key=lambda citation: citation.relevance_score, reverse=True)
-        return citations[:k]
+        return citations[:limit]
 
     def _format_context(self, citations: list[CitationSchema]) -> str:
         if not citations:
