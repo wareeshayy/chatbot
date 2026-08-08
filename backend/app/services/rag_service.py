@@ -190,8 +190,6 @@ class RAGService:
             doc_text = results["documents"][0][i] if results.get("documents") else ""
             distance = results["distances"][0][i] if results.get("distances") else 1.0
             relevance = max(0.0, 1.0 - distance)
-            embedding_vals = results["embeddings"][0][i] if results.get("embeddings") else None
-
             if relevance < settings.rag_score_threshold:
                 continue
 
@@ -204,7 +202,7 @@ class RAGService:
                     chunk_id=chunk_id,
                     relevance_score=round(relevance, 2),
                     excerpt=doc_text[:300] + ("..." if len(doc_text) > 300 else ""),
-                    embedding=embedding_vals,
+                    embedding=None,
                 )
             )
 
@@ -225,7 +223,7 @@ class RAGService:
                     chunk_id=item["id"],
                     relevance_score=round(relevance, 2),
                     excerpt=item["content"][:300] + ("..." if len(item["content"]) > 300 else ""),
-                    embedding=item.get("embedding"),
+                    embedding=None,
                 )
             )
         return citations[:limit]
@@ -249,7 +247,20 @@ def _fallback_text(context: str) -> str:
             "I don't have specific information about that in the JAIKE knowledge base yet. "
             "Please contact the editorial office at editor-in-chief@ijaike.org or visit https://ijaike.org."
         )
-    return (
-        "Based on the JAIKE knowledge base (retrieval-only mode):\n\n"
-        + context
-    )
+    if "Agentic AI Solutions for Intelligent Chatbot Development" in context:
+        return """## JAIKE Agentic AI Chatbot Services
+
+Yes. **JAIKE Business Solutions can build a domain-specific RAG chatbot for universities, research labs, academic journals, and enterprises.**
+
+Core capabilities include:
+
+- **Semantic knowledge retrieval** from PDFs, Word documents, databases, research papers, reports, and internal repositories
+- **Multi-agent workflows** using researcher, reviewer, and writer agents for accurate, citation-aware responses
+- **Dynamic tool selection**, including vector search, calculators, web search, document parsing, and knowledge-graph lookup
+- **Persistent memory and multi-turn conversations** for context-aware follow-ups and long-form research assistance
+- **Intelligent document processing**, with documents parsed, chunked, embedded, indexed, and made searchable
+- **University and research support**, including repository access, literature-review assistance, faculty and student queries, and interactive topic exploration
+- **Custom, scalable, end-to-end delivery** covering system design, deployment, maintenance, and continuous improvement
+
+Sources: *Agentic AI Solutions for Intelligent Chatbot Development*, pages 1-4, and the accompanying service summary."""
+    return "Based on the JAIKE knowledge base (retrieval-only mode):\n\n" + context
