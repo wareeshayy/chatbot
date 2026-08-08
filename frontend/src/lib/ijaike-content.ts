@@ -39,7 +39,48 @@ export interface NavGroup {
 
 export const SITE_NAV: NavGroup[] = [
   { label: "Home", href: "/" },
-  { label: "Resources", href: "/resources" },
+  {
+    label: "AIKE Services",
+    href: "/aike-services",
+    items: [
+      {
+        label: "Agentic AI Chatbot Development",
+        href: "/aike-services/agentic-ai-chatbot",
+        description: "Agentic AI Solutions for Intelligent ChatBot Development",
+      },
+      {
+        label: "Custom AI & Full-Stack Development",
+        href: "/aike-services/custom-ai-web-apps",
+        description: "Custom AI-Powered Web Applications & Full-Stack Software",
+      },
+    ],
+  },
+  {
+    label: "AAKS Services",
+    href: "/aaks-services",
+    items: [
+      {
+        label: "NeuroSyn-Copilot",
+        href: "/aaks-services#neurosyn-copilot",
+        description: "Documentation & Demo Video",
+      },
+      {
+        label: "NeuroSyn-Dev",
+        href: "/aaks-services#neurosyn-dev",
+        description: "Documentation & Demo Video",
+      },
+      {
+        label: "NeuroSyn-Aero",
+        href: "/aaks-services#neurosyn-aero",
+        description: "Documentation & Demo Video",
+      },
+      {
+        label: "NeuroSyn-SAP",
+        href: "/aaks-services#neurosyn-sap",
+        description: "Documentation & Demo Video",
+      },
+    ],
+  },
   {
     label: "For Authors",
     items: [

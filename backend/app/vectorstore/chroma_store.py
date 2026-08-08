@@ -23,6 +23,10 @@ class ChromaStore:
                 name=settings.chroma_collection_name,
                 metadata={"hnsw:space": "cosine"},
             )
+        elif self.store_type == "faiss":
+            from app.vectorstore.faiss_store import FAISSStore
+
+            self.faiss_store = FAISSStore.get_instance()
 
     @classmethod
     def get_instance(cls) -> "ChromaStore":
@@ -39,6 +43,13 @@ class ChromaStore:
     ) -> None:
         if self.store_type == "chroma":
             self.collection.upsert(
+                ids=ids,
+                embeddings=embeddings,
+                documents=documents,
+                metadatas=metadatas,
+            )
+        elif self.store_type == "faiss":
+            await self.faiss_store.add_chunks(
                 ids=ids,
                 embeddings=embeddings,
                 documents=documents,
@@ -64,6 +75,8 @@ class ChromaStore:
             existing = self.collection.get(where={"document_id": document_id})
             if existing and existing["ids"]:
                 self.collection.delete(ids=existing["ids"])
+        elif self.store_type == "faiss":
+            await self.faiss_store.delete_by_document(document_id)
         # For MongoDB, chunk deletion is already handled by repository delete_by_document in ingest_service.py
 
     async def search(
@@ -77,6 +90,8 @@ class ChromaStore:
                 n_results=top_k,
                 include=["documents", "metadatas", "distances", "embeddings"],
             )
+        elif self.store_type == "faiss":
+            return await self.faiss_store.search(query_embedding, top_k=top_k)
 
         # MongoDB Atlas Vector Search
         from app.models.document import DocumentChunk
@@ -148,6 +163,9 @@ class ChromaStore:
     async def count(self) -> int:
         if self.store_type == "chroma":
             return self.collection.count()
+        elif self.store_type == "faiss":
+            return await self.faiss_store.count()
         elif self.store_type == "mongodb":
             from app.models.document import DocumentChunk
             return await DocumentChunk.count()
+        return 0

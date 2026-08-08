@@ -869,6 +869,85 @@
           ]
         }
       ]
+    },
+    {
+      "page_title": "AIKE Services",
+      "url": "https://ijaike-chatbot.vercel.app/aike-services",
+      "intro": "JAIKE Business Unit AI Services providing Agentic AI Chatbot Development and Custom AI-Powered Web Applications & Full-Stack Software Engineering.",
+      "sections": [
+        {
+          "section_number": "1",
+          "section_title": "Agentic AI Solutions for Intelligent Chatbot Development",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "We specialize in designing and developing Agentic AI chatbots that understand domain-specific queries, retrieve and analyze information using vector embeddings and RAG pipelines, and deliver accurate responses."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Semantic Knowledge Retrieval: vector embeddings and RAG pipelines",
+                "Multi-Agent Reasoning: Researcher, Reviewer, and Writer Agents",
+                "Dynamic Tool Selection: Vector search, APC calculators, Web search, Document parsing, Knowledge graph lookup",
+                "Persistent Memory & Multi-Turn Conversations",
+                "Intelligent Document Processing: PDF, Word, research paper ingestion"
+              ]
+            }
+          ]
+        },
+        {
+          "section_number": "2",
+          "section_title": "Custom AI-Powered Web Applications & Full-Stack Software Development",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "End-to-end full-stack software development across React, Next.js, Node.js, Python FastAPI, PostgreSQL, MongoDB, Docker, and DevOps."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Business Websites and AI Web Applications",
+                "Enterprise Portals, Analytics Dashboards, and HR Portals",
+                "Full-Stack Development, APIs, Systems Integration, and E-Commerce/SaaS",
+                "Cloud Deployment, DevOps, Security Audits, and Solution Architecture"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_title": "AAKS Services",
+      "url": "https://ijaike-chatbot.vercel.app/aaks-services",
+      "intro": "Advanced AI & Knowledge Systems (AAKS) product suite featuring NeuroSyn-Copilot, NeuroSyn-Dev, NeuroSyn-Aero, and NeuroSyn-SAP.",
+      "sections": [
+        {
+          "section_number": "1",
+          "section_title": "NeuroSyn Product Suite",
+          "content": [
+            {
+              "type": "subsection",
+              "title": "NeuroSyn-Copilot",
+              "text": "AI-Powered Research & Writing Assistant. Documentation link: https://drive.google.com/file/d/1LgGkC8pt4hbhX7PgHkFMJSIKCLWPqRnj/view? Demo link: https://drive.google.com/file/d/10ms4rgy1t8nZPzpwsmLCsUeWFR542L48/view?"
+            },
+            {
+              "type": "subsection",
+              "title": "NeuroSyn-Dev",
+              "text": "Full-Stack Developer AI Copilot & Automated Software Engineering. Documentation link: https://drive.google.com/file/d/1ahUqSCkSwETs8kaf2YicuqwwqkPYXaBu/view? Demo link: https://drive.google.com/file/d/1OnTfLcLJu7pFFQaqNxPdNC19GdgSrfOu/view?"
+            },
+            {
+              "type": "subsection",
+              "title": "NeuroSyn-Aero",
+              "text": "Aerospace Engineering AI & Autonomous Simulation Platform. Documentation link: https://drive.google.com/file/d/1ADppcPRL7AzdbP4G7psPyQ3DNo2DFBR-/view? Demo link: https://drive.google.com/file/d/1CKWSOBrEwr4KkKD0E-Im2U1ZxWur-msT/view?"
+            },
+            {
+              "type": "subsection",
+              "title": "NeuroSyn-SAP",
+              "text": "Enterprise SAP Automation & Intelligent ERP Integration System. Documentation link: https://drive.google.com/file/d/1ZCjWGgL-uj6UyUnDHmT5IgMRK6MihpIM/view? Demo link: https://drive.google.com/file/d/1HyvCIugjy5tzfsTzSlCbRnroCEJBFJ4t/view?"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

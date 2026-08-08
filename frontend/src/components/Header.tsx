@@ -51,14 +51,23 @@ export function Header() {
                 onMouseEnter={() => setOpenDropdown(group.label)}
                 onMouseLeave={() => setOpenDropdown(null)}
               >
-                <button
-                  type="button"
-                  className={`px-3 py-2 ${group.items.some((i) => isActive(i.href)) ? "text-[#d4a843]" : "text-white/80 hover:text-[#d4a843]"}`}
-                >
-                  {group.label} ▾
-                </button>
+                {group.href ? (
+                  <Link
+                    href={group.href}
+                    className={`px-3 py-2 ${isActive(group.href) || group.items.some((i) => isActive(i.href)) ? "text-[#d4a843]" : "text-white/80 hover:text-[#d4a843]"}`}
+                  >
+                    {group.label} ▾
+                  </Link>
+                ) : (
+                  <button
+                    type="button"
+                    className={`px-3 py-2 ${group.items.some((i) => isActive(i.href)) ? "text-[#d4a843]" : "text-white/80 hover:text-[#d4a843]"}`}
+                  >
+                    {group.label} ▾
+                  </button>
+                )}
                 {openDropdown === group.label && (
-                  <div className="absolute left-0 top-full z-50 min-w-[260px] rounded-sm border border-white/10 bg-[#0f1f35] py-2 shadow-xl">
+                  <div className="absolute left-0 top-full z-50 min-w-[280px] rounded-sm border border-white/10 bg-[#0f1f35] py-2 shadow-xl">
                     {group.items.map((item) => 
                       item.href.startsWith("http") ? (
                         <a
@@ -68,9 +77,9 @@ export function Header() {
                           rel="noopener noreferrer"
                           className="block px-4 py-2 hover:bg-white/5 text-left"
                         >
-                          <span className="block text-white/90">{item.label}</span>
+                          <span className="block text-white/90 font-medium">{item.label}</span>
                           {item.description && (
-                            <span className="block text-xs text-white/50">{item.description}</span>
+                            <span className="block text-xs text-white/50 mt-0.5">{item.description}</span>
                           )}
                         </a>
                       ) : (
@@ -79,9 +88,9 @@ export function Header() {
                           href={item.href}
                           className="block px-4 py-2 hover:bg-white/5 text-left"
                         >
-                          <span className="block text-white/90">{item.label}</span>
+                          <span className="block text-white/90 font-medium">{item.label}</span>
                           {item.description && (
-                            <span className="block text-xs text-white/50">{item.description}</span>
+                            <span className="block text-xs text-white/50 mt-0.5">{item.description}</span>
                           )}
                         </Link>
                       )
@@ -147,38 +156,37 @@ export function Header() {
                     {group.label}
                   </a>
                 ) : (
-                  <Link href={group.href} className="block py-1 font-medium" onClick={() => setMobileOpen(false)}>
+                  <Link href={group.href} className="block py-1 font-medium text-[#d4a843]" onClick={() => setMobileOpen(false)}>
                     {group.label}
                   </Link>
                 )
               ) : (
-                <>
-                  <p className="py-1 font-medium text-[#d4a843]">{group.label}</p>
-                  {group.items?.map((item) => (
-                    item.href.startsWith("http") ? (
-                      <a
-                        key={item.href}
-                        href={item.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block py-1 pl-3 text-sm text-white/80 hover:text-[#d4a843]"
-                        onClick={() => setMobileOpen(false)}
-                      >
-                        {item.label}
-                      </a>
-                    ) : (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className="block py-1 pl-3 text-sm text-white/80"
-                        onClick={() => setMobileOpen(false)}
-                      >
-                        {item.label}
-                      </Link>
-                    )
-                  ))}
-                </>
+                <p className="py-1 font-medium text-[#d4a843]">{group.label}</p>
               )}
+
+              {group.items?.map((item) => (
+                item.href.startsWith("http") ? (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block py-1 pl-3 text-sm text-white/80 hover:text-[#d4a843]"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="block py-1 pl-3 text-sm text-white/80"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                )
+              ))}
             </div>
           ))}
         </div>

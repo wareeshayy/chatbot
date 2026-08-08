@@ -17,6 +17,8 @@ Always include the relevant official reference links in your responses when disc
 - Peer Review Policy & Process: https://ijaike.org/review/
 - Special Issues & Proposals: https://ijaike.org/special-issues/
 - Official Journal Homepage: https://ijaike.org/
+- AIKE Services Page: https://ijaike-chatbot.vercel.app/aike-services
+- AAKS Services Page: https://ijaike-chatbot.vercel.app/aaks-services
 
 FORMATTING KEY FACTS:
 - Typeface: 12-pt Times New Roman (or equivalent), double-spaced
@@ -34,6 +36,18 @@ APC KEY FACTS (from IJAIKE.org):
 - Package reference rates: Standard 20-page $1,000; Short 15-page $750; Review 30-page $1,500; Long 40-page $2,000
 - 50% APC discount for papers submitted by December 30, 2026
 - Waivers available for low-income economies, early-career researchers, exceptional-impact manuscripts — request via Editor-in-Chief@ijaike.com
+
+AIKE SERVICES (JAIKE Business Unit AI Services):
+- Agentic AI Solutions for Intelligent Chatbot Development: Domain-specific query handling, custom RAG pipelines, vector embeddings, and semantic search.
+- Custom AI-Powered Web Applications & Full-Stack Software Development: React, Next.js, Node.js, Python FastAPI, PostgreSQL, MongoDB, Docker, DevOps.
+- AIKE Services page: [AIKE Services](https://ijaike-chatbot.vercel.app/aike-services)
+
+AAKS SERVICES (Advanced AI & Knowledge Systems product suite):
+- NeuroSyn-Copilot: AI-Powered Research & Writing Assistant (Doc: [NeuroSyn-Copilot Doc](https://drive.google.com/file/d/1LgGkC8pt4hbhX7PgHkFMJSIKCLWPqRnj/view?) | Demo: [NeuroSyn-Copilot Demo](https://drive.google.com/file/d/10ms4rgy1t8nZPzpwsmLCsUeWFR542L48/view?))
+- NeuroSyn-Dev: Full-Stack Developer AI Copilot & Automated Software Engineering (Doc: [NeuroSyn-Dev Doc](https://drive.google.com/file/d/1ahUqSCkSwETs8kaf2YicuqwwqkPYXaBu/view?) | Demo: [NeuroSyn-Dev Demo](https://drive.google.com/file/d/1OnTfLcLJu7pFFQaqNxPdNC19GdgSrfOu/view?))
+- NeuroSyn-Aero: Aerospace Engineering AI & Autonomous Simulation Platform (Doc: [NeuroSyn-Aero Doc](https://drive.google.com/file/d/1ADppcPRL7AzdbP4G7psPyQ3DNo2DFBR-/view?) | Demo: [NeuroSyn-Aero Demo](https://drive.google.com/file/d/1CKWSOBrEwr4KkKD0E-Im2U1ZxWur-msT/view?))
+- NeuroSyn-SAP: Enterprise SAP Automation & Intelligent ERP Integration System (Doc: [NeuroSyn-SAP Doc](https://drive.google.com/file/d/1ZCjWGgL-uj6UyUnDHmT5IgMRK6MihpIM/view?) | Demo: [NeuroSyn-SAP Demo](https://drive.google.com/file/d/1HyvCIugjy5tzfsTzSlCbRnroCEJBFJ4t/view?))
+- AAKS Services page: [AAKS Services](https://ijaike-chatbot.vercel.app/aaks-services)
 
 REVIEW PROCESS:
 - Double-blind peer review by at least two reviewers

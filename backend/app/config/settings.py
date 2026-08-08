@@ -66,12 +66,13 @@ class Settings(BaseSettings):
     embedding_provider: Literal["gemini", "openai", "sentence_transformer"] = "gemini"
     sentence_transformer_model: str = "all-MiniLM-L6-v2"
 
-    # Vector store: chroma (local) or mongodb (Atlas Vector Search for production)
-    vector_store: Literal["chroma", "mongodb"] = "chroma"
+    # Vector store: chroma (local), mongodb (Atlas Vector Search), or faiss (in-memory Meta FAISS)
+    vector_store: Literal["chroma", "mongodb", "faiss"] = "chroma"
 
-    # ChromaDB
+    # Vector Store Paths
     chroma_persist_dir: str = str(Path(__file__).resolve().parents[2] / "data" / "chroma")
     chroma_collection_name: str = "ijaike_kb"
+    faiss_persist_dir: str = str(Path(__file__).resolve().parents[2] / "data" / "faiss")
 
     # Storage
     storage_backend: Literal["local", "azure", "s3"] = "local"
