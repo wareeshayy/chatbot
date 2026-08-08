@@ -247,7 +247,12 @@ def _fallback_text(context: str) -> str:
             "I don't have specific information about that in the JAIKE knowledge base yet. "
             "Please contact the editorial office at editor-in-chief@ijaike.org or visit https://ijaike.org."
         )
-    if "Custom AI-Powered Web Applications & Full-Stack Software Development" in context:
+    custom_title = "Custom AI-Powered Web Applications & Full-Stack Software Development"
+    agentic_title = "Agentic AI Solutions for Intelligent Chatbot Development"
+    custom_position = context.find(custom_title)
+    agentic_position = context.find(agentic_title)
+
+    if custom_position >= 0 and (agentic_position < 0 or custom_position < agentic_position):
         return """## JAIKE Custom Web Application & Full-Stack Services
 
 Yes. **The JAIKE Business Unit designs and delivers custom AI-powered web applications and complete full-stack software products**, from prototype through production deployment and ongoing support.
@@ -266,7 +271,7 @@ Available services include:
 These solutions can support corporate sites, startup products, university portals, internal dashboards, booking systems, publishing platforms, CRM/ERP-adjacent tools, and reporting systems.
 
 Sources: *Custom AI-Powered Web Applications & Full-Stack Software Development*, pages 1-6."""
-    if "Agentic AI Solutions for Intelligent Chatbot Development" in context:
+    if agentic_position >= 0:
         return """## JAIKE Agentic AI Chatbot Services
 
 Yes. **JAIKE Business Solutions can build a domain-specific RAG chatbot for universities, research labs, academic journals, and enterprises.**
