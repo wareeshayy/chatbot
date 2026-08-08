@@ -247,6 +247,25 @@ def _fallback_text(context: str) -> str:
             "I don't have specific information about that in the JAIKE knowledge base yet. "
             "Please contact the editorial office at editor-in-chief@ijaike.org or visit https://ijaike.org."
         )
+    if "Custom AI-Powered Web Applications & Full-Stack Software Development" in context:
+        return """## JAIKE Custom Web Application & Full-Stack Services
+
+Yes. **The JAIKE Business Unit designs and delivers custom AI-powered web applications and complete full-stack software products**, from prototype through production deployment and ongoing support.
+
+Available services include:
+
+- Business websites, AI-powered web applications, enterprise portals, and real-time dashboards
+- Full-stack engineering with React, Next.js, TypeScript, Node.js, Python, FastAPI, MongoDB, PostgreSQL, Redis, and SQLite
+- REST/GraphQL APIs, webhooks, OAuth, CRM/ERP connections, payment gateways, and other third-party integrations
+- E-commerce storefronts and multi-tenant SaaS platforms
+- UI/UX design, wireframing, reusable design systems, responsive engineering, and accessibility
+- Cloud deployment, Docker/Kubernetes, CI/CD automation, monitoring, logging, and uptime management
+- Database architecture, performance optimization, application security, maintenance, and continuing support
+- Embedded AI features such as conversational assistants, semantic search, document processing, recommendations, and workflow automation
+
+These solutions can support corporate sites, startup products, university portals, internal dashboards, booking systems, publishing platforms, CRM/ERP-adjacent tools, and reporting systems.
+
+Sources: *Custom AI-Powered Web Applications & Full-Stack Software Development*, pages 1-6."""
     if "Agentic AI Solutions for Intelligent Chatbot Development" in context:
         return """## JAIKE Agentic AI Chatbot Services
 

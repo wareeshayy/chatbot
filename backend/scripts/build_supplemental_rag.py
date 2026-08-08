@@ -18,8 +18,8 @@ SOURCES = (
         "Agentic AI Solutions for Intelligent Chatbot Development",
     ),
     (
-        PROJECT_ROOT / "data" / "pdfs" / "Agentic_AI_Solutions_for_Intelligent_Chatbot_Development_Summary.txt",
-        "Agentic AI Solutions for Intelligent Chatbot Development - Service Summary",
+        PROJECT_ROOT / "data" / "pdfs" / "Custom_AI_Powered_Web_Applications_and_Full_Stack_Software_Development.pdf",
+        "Custom AI-Powered Web Applications & Full-Stack Software Development",
     ),
 )
 CHUNK_SIZE = 1000

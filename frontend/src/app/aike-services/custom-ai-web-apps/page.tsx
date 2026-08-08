@@ -69,7 +69,7 @@ export default function CustomAiWebAppsPage() {
         <DocumentViewerUploader
           documentTitle="Custom AI-Powered Web Applications & Full-Stack Software Development"
           pdfFileName="Custom_AI_Powered_Web_Applications_and_Full_Stack_Software_Development.pdf"
-          pdfUrl="/documents/Custom_AI_Powered_Web_Applications_and_Full_Stack_Software_Development.txt"
+          pdfUrl="/documents/Custom_AI_Powered_Web_Applications_and_Full_Stack_Software_Development.pdf"
         />
 
         {/* Executive Summary */}
